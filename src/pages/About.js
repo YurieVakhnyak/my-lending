@@ -27,6 +27,7 @@ function About() {
         <Box
           sx={{
             bgcolor: "#cfe8fc",
+            // bgcolor: "white",
 
             p: 2,
             // height: "50vh",
@@ -57,10 +58,12 @@ function About() {
           </Card>
         </Box>
         <Box
-          m={3}
-          sx={{
-            bgcolor: "cyan",
-          }}
+          p={3}
+          sx={
+            {
+              // bgcolor: "cyan",
+            }
+          }
         >
           <Typography variant="body2" color="text.secondary">
             {AboutBio}
