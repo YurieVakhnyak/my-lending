@@ -28,25 +28,50 @@ function Appointmnent() {
           }}
         >
           <Box
-            my={4}
-            bgcolor="cyan"
+            p={3}
+            // bgcolor="cyan"
             display="flex"
-            alignItems="start"
+            flexDirection="column"
+            alignItems="center"
             justifyContent="center"
-            gap={4}
-            sx={{
-              width: 700,
-            }}
+            gap={3}
+            // sx={{
+            //   width: 700,
+            // }}
           >
-            <Typography variant="body1" color="text.secondary">
-              Часи роботи: пон - сб 9:00-19:00
+            <Typography variant="h5" color="text.secondary">
+              Часи роботи:
+            </Typography>
+            <Typography variant="h5" color="text.secondary">
+              пон - сб 9:00-19:00
+            </Typography>
+            <Typography variant="h5" color="text.secondary">
+              Для запису або якщо виникли запитання телефонуйте або пишіть у
+              один з месенджерів:
+            </Typography>
+            <Typography variant="h6" color="text.accent">
+              Зателефонувати:{" "}
+              <a
+                href="tel:0660000000"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                066-000-00-00
+              </a>
+              ,{" "}
+              <a
+                href="tel:0680000000"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                068-000-00-00
+              </a>
+            </Typography>
+            <Typography variant="h5" color="text.secondary">
+              Часи роботи:
+            </Typography>
+            <Typography variant="h4" color="text.secondary">
+              з понеділка по суботу з 9:00 до 19:00
             </Typography>
           </Box>
-        </Box>
-        <Box m={3} bgcolor="cyan" sx={{}}>
-          <Typography variant="body1" color="text.secondary">
-            Записатися: 066-000-00-00
-          </Typography>
         </Box>
       </Box>
       <Footer />
