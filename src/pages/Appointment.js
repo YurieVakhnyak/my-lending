@@ -1,79 +1,134 @@
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
 import * as React from "react";
+import { Box, Container, Typography, IconButton } from "@mui/material";
 import Header from "../components/Header";
 import "../App.css";
 import Footer from "../components/Footer";
-
+import { Telegram, Facebook, Instagram } from "@mui/icons-material";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { blue, pink, green } from "@mui/material/colors";
 function Appointmnent() {
   return (
     <Container disableGutters maxWidth={false}>
+      <Header />
+
       <Box
+        p={3}
         sx={{
           bgcolor: "#cfe8fc",
-          height: "85vh",
+          minHeight: "65vh",
+
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "start",
+          flexWrap: "wrap",
         }}
       >
-        <Header />
-
         <Box
-          sx={{
-            bgcolor: "#cfe8fc",
-            height: "50vh",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "start",
-            flexWrap: "wrap",
-          }}
+          p={2}
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+          gap={2}
+          // sx={{
+          //   width: 700,
+          // }}
         >
-          <Box
-            p={3}
-            // bgcolor="cyan"
-            display="flex"
-            flexDirection="column"
-            alignItems="center"
-            justifyContent="center"
-            gap={3}
-            // sx={{
-            //   width: 700,
-            // }}
-          >
-            <Typography variant="h5" color="text.secondary">
-              Часи роботи:
-            </Typography>
-            <Typography variant="h5" color="text.secondary">
-              пон - сб 9:00-19:00
-            </Typography>
-            <Typography variant="h5" color="text.secondary">
-              Для запису або якщо виникли запитання телефонуйте або пишіть у
-              один з месенджерів:
-            </Typography>
-            <Typography variant="h6" color="text.accent">
-              Зателефонувати:{" "}
-              <a
-                href="tel:0660000000"
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                066-000-00-00
-              </a>
-              ,{" "}
-              <a
-                href="tel:0680000000"
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                068-000-00-00
-              </a>
-            </Typography>
-            <Typography variant="h5" color="text.secondary">
-              Часи роботи:
-            </Typography>
-            <Typography variant="h4" color="text.secondary">
-              з понеділка по суботу з 9:00 до 19:00
-            </Typography>
+          <Typography variant="h5" color="text.secondary">
+            Для запису або запитань пишіть:
+          </Typography>
+          <Box>
+            <IconButton
+              // fontSize="large"
+              component="a"
+              sx={{
+                color: green[500],
+                "&:hover": {
+                  color: green[300],
+                },
+              }}
+              href="https://www.WhatsApp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
+              <WhatsAppIcon />
+            </IconButton>
+            <IconButton
+              component="a"
+              sx={{
+                color: blue[400],
+                "&:hover": {
+                  color: blue[300],
+                },
+              }}
+              href="https://www.telegram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Telegram"
+            >
+              <Telegram />
+            </IconButton>
+            <IconButton
+              component="a"
+              sx={{
+                color: blue[500],
+                // "&:hover": {
+                //   color: blue[400],
+                // },
+              }}
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <Facebook />
+            </IconButton>
+            <IconButton
+              component="a"
+              sx={{
+                color: pink[300],
+                "&:hover": {
+                  color: pink[500],
+                },
+              }}
+              // sx={{ color: pink[300] }}
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <Instagram />
+            </IconButton>
           </Box>
+
+          <Typography variant="h6" color="text.accent">
+            або телефонуйте:{" "}
+          </Typography>
+          <Typography variant="h5" color="text.accent">
+            <a
+              href="tel:0660000000"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              066-000-00-00
+            </a>
+            ,{" "}
+            <a
+              href="tel:0680000000"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              068-000-00-00
+            </a>
+          </Typography>
+          <Typography variant="h6" color="text.secondary">
+            Часи роботи:
+          </Typography>
+          <Typography variant="h5" color="text.secondary">
+            понеділок - субота з 9:00 до 19:00
+          </Typography>
         </Box>
       </Box>
+
       <Footer />
     </Container>
   );

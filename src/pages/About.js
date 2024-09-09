@@ -16,14 +16,13 @@ import Footer from "../components/Footer";
 function About() {
   return (
     <Container disableGutters maxWidth={false}>
+      <Header />
       <Box
         sx={{
           bgcolor: "#cfe8fc",
           // height: "85vh",
         }}
       >
-        <Header />
-
         <Box
           sx={{
             bgcolor: "#cfe8fc",
