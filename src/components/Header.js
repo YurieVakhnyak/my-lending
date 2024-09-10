@@ -10,6 +10,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import PhonelinkTwoToneIcon from "@mui/icons-material/PhonelinkTwoTone";
+import { blue, green, grey } from "@mui/material/colors";
 import { NavLink } from "react-router-dom";
 
 const pages = ["HOME", "Про мене", "Записатися"];
@@ -48,7 +49,7 @@ function Header() {
             }}
           >
             {title.map((title) => (
-              <NavLink to={"/"} style={{ textDecoration: "none" }}>
+              <NavLink to={"/appointment/"} style={{ textDecoration: "none" }}>
                 <Button
                   key={title + "1"}
                   variant="h6"
@@ -61,6 +62,9 @@ function Header() {
                     fontWeight: 700,
                     letterSpacing: title === "ONLINE" ? ".3rem" : "normal",
                     color: "white",
+                    "&:hover": {
+                      color: green[300],
+                    },
                   }}
                 >
                   {title}
@@ -114,7 +118,17 @@ function Header() {
                         : "/"
                     }
                   >
-                    <Button textAlign="center">{page}</Button>
+                    <Button
+                      textAlign="center"
+                      sx={{
+                        color: grey[500],
+                        "&:hover": {
+                          color: blue[400],
+                        },
+                      }}
+                    >
+                      {page}
+                    </Button>
                   </NavLink>
                 </MenuItem>
               ))}
@@ -129,7 +143,7 @@ function Header() {
             }}
           >
             {title.map((title) => (
-              <NavLink to="/" style={{ textDecoration: "none" }}>
+              <NavLink to="/appointment/" style={{ textDecoration: "none" }}>
                 <Typography
                   key={title}
                   variant="h5"
@@ -144,6 +158,9 @@ function Header() {
                     fontWeight: 700,
                     letterSpacing: ".3rem",
                     color: "inherit",
+                    "&:hover": {
+                      color: green[300],
+                    },
                   }}
                 >
                   {title}
@@ -177,6 +194,11 @@ function Header() {
                   sx={{
                     my: 2,
                     color: "white",
+
+                    "&:hover": {
+                      color: green[300],
+                    },
+
                     display: "block",
                   }}
                 >

@@ -13,6 +13,7 @@ import "../App.css";
 import { AboutBio, AboutMyProfession } from "../data/TextConstants";
 import Footer from "../components/Footer";
 import ProgressiveImageCard from "../components/ProgressiveImageCard";
+import YouTubeVideo from "../components/YouTubeVideo";
 
 function About() {
   return (
@@ -70,6 +71,7 @@ function About() {
             {AboutBio}
           </Typography>
         </Box>
+        <YouTubeVideo />
       </Box>
       <Footer />
     </Container>

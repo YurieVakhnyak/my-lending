@@ -19,7 +19,7 @@ const ProgressiveImageCard = () => {
     const highImage = new Image();
     highImage.src = highQualityImage;
     highImage.onload = () => setImageSrc(highQualityImage);
-  }, [mediumQualityImage, highQualityImage]);
+  }, []);
 
   return (
     <Card sx={{ width: 350 }}>
