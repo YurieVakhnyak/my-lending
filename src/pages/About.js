@@ -1,17 +1,18 @@
 import Box from "@mui/material/Box";
 // import Button from "@mui/material/Button";
-import Card from "@mui/material/Card";
+// import Card from "@mui/material/Card";
 // import CardActions from "@mui/material/CardActions";
 // import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
+// import CardMedia from "@mui/material/CardMedia";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import Header from "../components/Header";
 import "../App.css";
-import myphoto from "../components/images/mainphoto-mid.jpg";
+// import myphoto from "../components/images/mainphoto-mid.jpg";
 import { AboutBio, AboutMyProfession } from "../data/TextConstants";
 import Footer from "../components/Footer";
+import ProgressiveImageCard from "../components/ProgressiveImageCard";
 
 function About() {
   return (
@@ -51,10 +52,11 @@ function About() {
             </Typography>
             {/* <Button size="small">Подробиці</Button> */}
           </Box>
+          <ProgressiveImageCard />
 
-          <Card sx={{ width: 300, m: 2 }}>
+          {/* <Card sx={{ width: 300, m: 2 }}>
             <CardMedia sx={{ height: 300 }} image={myphoto} title="yurie" />
-          </Card>
+          </Card> */}
         </Box>
         <Box
           p={3}
