@@ -10,7 +10,7 @@ import * as React from "react";
 import Header from "../components/Header";
 import "../App.css";
 // import myphoto from "../components/images/mainphoto-mid.jpg";
-import { AboutBio, AboutMyProfession } from "../data/TextConstants";
+import { AboutBio } from "../data/TextConstants";
 import Footer from "../components/Footer";
 import ProgressiveImageCard from "../components/ProgressiveImageCard";
 import YouTubeVideo from "../components/YouTubeVideo";
@@ -39,7 +39,7 @@ function About() {
           }}
         >
           <Box
-            my={4}
+            // my={4}
             display="flex"
             alignItems="start"
             justifyContent="center"
@@ -59,20 +59,21 @@ function About() {
           </Card> */}
         </Box>
         <Box
-          p={3}
+          p={2}
           sx={
             {
               // bgcolor: "cyan",
             }
           }
         >
+          <Typography variant="h5" align="center">
+            Дипломи та сертифікати
+          </Typography>
           {/* <Typography variant="body2" color="text.secondary">
             {AboutMyProfession}
           </Typography> */}
         </Box>
-        <Box>
-          <Typography variant="h5">Дипломи та сертифікати</Typography>
-        </Box>
+        <Box></Box>
         <YouTubeVideo />
       </Box>
       <Footer />
