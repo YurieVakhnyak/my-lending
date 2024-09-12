@@ -14,6 +14,7 @@ import { AboutBio } from "../data/TextConstants";
 import Footer from "../components/Footer";
 import ProgressiveImageCard from "../components/ProgressiveImageCard";
 import YouTubeVideo from "../components/YouTubeVideo";
+import EducationDocs from "../components/EducationDocs";
 
 function About() {
   return (
@@ -66,9 +67,7 @@ function About() {
             }
           }
         >
-          <Typography variant="h5" align="center">
-            Дипломи та сертифікати
-          </Typography>
+          <EducationDocs />
           {/* <Typography variant="body2" color="text.secondary">
             {AboutMyProfession}
           </Typography> */}
