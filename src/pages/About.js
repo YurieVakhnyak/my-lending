@@ -48,9 +48,8 @@ function About() {
               width: 700,
             }}
           >
-            <Typography variant="body1" color="text.secondary">
-              {AboutMyProfession}
-            </Typography>
+            <Typography variant="body1" color="text.secondary"></Typography>
+            {AboutBio}
             {/* <Button size="small">Подробиці</Button> */}
           </Box>
           <ProgressiveImageCard />
@@ -67,9 +66,12 @@ function About() {
             }
           }
         >
-          <Typography variant="body2" color="text.secondary">
-            {AboutBio}
-          </Typography>
+          {/* <Typography variant="body2" color="text.secondary">
+            {AboutMyProfession}
+          </Typography> */}
+        </Box>
+        <Box>
+          <Typography variant="h5">Дипломи та сертифікати</Typography>
         </Box>
         <YouTubeVideo />
       </Box>
