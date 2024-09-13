@@ -3,6 +3,7 @@ import { Box, Typography, CardContent } from "@mui/material";
 import { Card, CardMedia } from "@mui/material";
 import photoDiplomFacial from "../components/images/diplom-magistr-facial.jpg";
 import photoDiplomBack from "../components/images/diplom-magistr-back.jpg";
+import photoSertificatePsyhotrauma from "../components/images/odesa-semin-trauma.jpg";
 
 const EducationDocs = () => {
   return (
@@ -10,6 +11,8 @@ const EducationDocs = () => {
       sx={{
         color: "inherit",
         // bgcolor: "#1a237e",
+        display: "flex",
+        flexWrap: "wrap",
         py: 3,
         mt: "auto",
         textAlign: "center",
@@ -18,16 +21,23 @@ const EducationDocs = () => {
       <Typography variant="h5" align="center">
         Дипломи та сертифікати
       </Typography>
-      <Box>
+
+      <Box
+        sx={{
+          color: "inherit",
+          display: "flex",
+          flexWrap: "wrap",
+          gap: 3,
+          py: 3,
+          mt: "auto",
+          textAlign: "center",
+        }}
+      >
         <Card sx={{ maxWidth: 350 }}>
           <CardContent>
             <Typography gutterBottom variant="h6" component="div">
               Диплом магістра психології
             </Typography>
-            {/* <Typography variant="body2" sx={{ color: "text.secondary" }}>
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography> */}
           </CardContent>
           <CardMedia
             sx={{ height: 220 }}
@@ -38,6 +48,18 @@ const EducationDocs = () => {
             sx={{ height: 220 }}
             image={photoDiplomBack}
             title="diploma of psyhology back side"
+          />
+        </Card>
+        <Card sx={{ maxWidth: 600 }}>
+          <CardContent>
+            <Typography gutterBottom variant="h6" component="div">
+              Сертифікат "Подолання психотравми"
+            </Typography>
+          </CardContent>
+          <CardMedia
+            sx={{ height: 220 }}
+            image={photoSertificatePsyhotrauma}
+            title="photo certificate Odesa"
           />
         </Card>
       </Box>
