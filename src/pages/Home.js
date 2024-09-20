@@ -3,15 +3,14 @@ import Header from "../components/Header";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-
 import Paper from "@mui/material/Paper";
-
 import {
   HomeQuoteOne,
   HomeQuoteThree,
   HomeQuoteTwo,
 } from "../data/TextConstants";
 import AboutMeShort from "../components/AboutMeShort";
+import AppointmentButton from "../components/AppointmentButton";
 import Footer from "../components/Footer";
 
 function Home() {
@@ -86,6 +85,7 @@ function Home() {
         </Box>
       </Box>
       <AboutMeShort />
+      <AppointmentButton />
       <Footer />
     </Container>
   );
