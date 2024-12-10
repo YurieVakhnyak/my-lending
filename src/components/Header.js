@@ -13,7 +13,7 @@ import PhonelinkTwoToneIcon from "@mui/icons-material/PhonelinkTwoTone";
 import { blue, green, grey } from "@mui/material/colors";
 import { NavLink } from "react-router-dom";
 
-const pages = ["HOME", "Про мене", "Записатися"];
+const pages = ["HOME", "Про мене", "Статті", "Відео", "Записатися"];
 const title = ["ПСИХОЛОГ", "ONLINE"];
 
 function Header() {
@@ -25,6 +25,14 @@ function Header() {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+  };
+
+  const routes = {
+    HOME: "/",
+    "Про мене": "/about",
+    Статті: "/articles",
+    Відео: "/videos",
+    Записатися: "/appointment",
   };
 
   return (
@@ -109,15 +117,7 @@ function Header() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <NavLink
-                    to={
-                      page === "Про мене"
-                        ? "/about"
-                        : page === "Записатися"
-                        ? "/appointment"
-                        : "/"
-                    }
-                  >
+                  <NavLink to={routes[page]}>
                     <Button
                       textAlign="center"
                       sx={{
@@ -178,16 +178,7 @@ function Header() {
             }}
           >
             {pages.map((page) => (
-              <NavLink
-                to={
-                  page === "Про мене"
-                    ? "/about"
-                    : page === "Записатися"
-                    ? "/appointment"
-                    : "/"
-                }
-                style={{ textDecoration: "none" }}
-              >
+              <NavLink to={routes[page]} style={{ textDecoration: "none" }}>
                 <Button
                   key={page}
                   onClick={handleCloseNavMenu}

@@ -6,7 +6,6 @@ import Header from "../components/Header";
 import { AboutBio } from "../data/TextConstants";
 import Footer from "../components/Footer";
 import ProgressiveImageCard from "../components/ProgressiveImageCard";
-import YouTubeVideo from "../components/YouTubeVideo";
 import EducationDocs from "../components/EducationDocs";
 import AppointmentButton from "../components/AppointmentButton";
 import "../App.css";
@@ -60,7 +59,6 @@ function About() {
           <EducationDocs />
         </Box>
         <Box></Box>
-        <YouTubeVideo />
       </Box>
       <AppointmentButton />
       <Footer />

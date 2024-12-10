@@ -32,7 +32,7 @@ const YouTubeVideo = () => {
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/C0qzAYBA8gY?si=fTRx_XJfKTANtaKx"
+        src="https://www.youtube.com/embed/e4whufQDnU0?si=Ka03gY0e0JIpCIHV"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
