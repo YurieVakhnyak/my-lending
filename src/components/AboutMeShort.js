@@ -1,10 +1,13 @@
 import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
+
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import "../App.css";
-import myphoto from "../components/images/mainphoto-mid.jpg";
+
+import ProgressiveImageCard from "../components/ProgressiveImageCard";
+import lowQualityImage from "../components/images/mainphoto-min.jpg";
+import mediumQualityImage from "../components/images/mainphoto-mid.jpg";
+import highQualityImage from "../components/images/mainphoto.jpg";
 import { AboutMyProfession } from "../data/TextConstants";
 
 function AboutMeShort() {
@@ -24,11 +27,14 @@ function AboutMeShort() {
           {AboutMyProfession}
         </Typography>
       </Box>
-      <Box>
-        <Card sx={{ width: 350 }}>
-          <CardMedia sx={{ height: 250 }} image={myphoto} title="yurie" />
-        </Card>
-      </Box>
+      <ProgressiveImageCard
+        lowQualityImage={lowQualityImage}
+        mediumQualityImage={mediumQualityImage}
+        highQualityImage={highQualityImage}
+        width={300} // Ширина картки
+        height={250} // Висота картки
+        title="Yurie Vakhnyak's Photo"
+      />
     </Box>
   );
 }

@@ -5,9 +5,14 @@ import Typography from "@mui/material/Typography";
 import Header from "../components/Header";
 import { AboutBio } from "../data/TextConstants";
 import Footer from "../components/Footer";
-import ProgressiveImageCard from "../components/ProgressiveImageCard";
+// import Card from "@mui/material/Card";
+// import CardMedia from "@mui/material/CardMedia";
 import EducationDocs from "../components/EducationDocs";
 import AppointmentButton from "../components/AppointmentButton";
+import ProgressiveImageCard from "../components/ProgressiveImageCard";
+import lowQualityImage from "../components/images/photo_yurie_vakhnyak_min.jpg";
+import mediumQualityImage from "../components/images/photo_yurie_vakhnyak_mid.jpg";
+import highQualityImage from "../components/images/photo_yurie_vakhnyak.jpg";
 import "../App.css";
 
 function About() {
@@ -46,7 +51,14 @@ function About() {
             <Typography variant="body1" color="text.secondary"></Typography>
             {AboutBio}
           </Box>
-          <ProgressiveImageCard />
+          <ProgressiveImageCard
+            lowQualityImage={lowQualityImage}
+            mediumQualityImage={mediumQualityImage}
+            highQualityImage={highQualityImage}
+            width={250} // Ширина картки
+            height={250} // Висота картки
+            title="Yurie Vakhnyak's Photo"
+          />
         </Box>
         <Box
           p={2}

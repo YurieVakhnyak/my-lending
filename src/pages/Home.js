@@ -17,16 +17,10 @@ function Home() {
   return (
     <Container disableGutters maxWidth={false}>
       <Header />
-      <Box
-      // sx={{
-      //   bgcolor: "#cfe8fc",
-      //   height: "80vh",
-      // }}
-      >
+      <Box>
         <Box
           sx={{
             bgcolor: "#afe8fc",
-            // height: "100vh",
             display: "flex",
             justifyContent: "center",
             alignItems: "start",
@@ -35,7 +29,6 @@ function Home() {
         >
           <Box
             sx={{
-              // bgcolor: "#d7e360",
               display: "flex",
               width: 500,
 
@@ -53,10 +46,14 @@ function Home() {
                 color: "#42a5f5",
               }}
             >
-              Почни свій шлях до{" "}
-              <Box component="span" sx={{ color: "#1976d2" }}>
-                ЩАСТЯ
-              </Box>
+              Почни зміни з{" "}
+              <Box
+                component="span"
+                sx={{ color: "#1976d2", fontSize: "1.2em", fontWeight: "bold" }}
+              >
+                прийняття
+              </Box>{" "}
+              себе
             </Typography>
           </Box>
 
