@@ -1,7 +1,9 @@
 import React from "react";
 import { Box } from "@mui/material";
 
-const YouTubeVideo = () => {
+const YouTubeVideo = ({
+  videoUrl = "https://www.youtube.com/embed/e4whufQDnU0",
+}) => {
   return (
     <Box
       sx={{
@@ -20,19 +22,10 @@ const YouTubeVideo = () => {
         },
       }}
     >
-      {/* <iframe
-        width="560"
-        height="315"
-        src="https://youtu.be/C0qzAYBA8gY?si=rzxARp2XNvbaVZOa"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe> */}
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/e4whufQDnU0?si=Ka03gY0e0JIpCIHV"
+        src={videoUrl}
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
