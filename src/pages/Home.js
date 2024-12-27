@@ -15,7 +15,15 @@ import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <Container disableGutters maxWidth={false}>
+    <Container
+      disableGutters
+      maxWidth={false}
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+      }}
+    >
       <Header />
       <Box>
         <Box

@@ -10,7 +10,16 @@ import { videoLinks } from "../data/VideoLinkConstants";
 
 function MyVideos() {
   return (
-    <Container disableGutters maxWidth={false} sx={{ bgcolor: "#cfe8fc" }}>
+    <Container
+      disableGutters
+      maxWidth={false}
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+        bgcolor: "#cfe8fc",
+      }}
+    >
       <Header />
       <Box sx={{ display: "flex", flexWrap: "wrap" }}>
         {videoLinks.map((videoId, index) => (

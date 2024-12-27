@@ -17,7 +17,16 @@ import "../App.css";
 
 function About() {
   return (
-    <Container disableGutters maxWidth={false}>
+    <Container
+      disableGutters
+      maxWidth={false}
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+        bgcolor: "#cfe8fc",
+      }}
+    >
       <Header />
       <Box
         sx={{

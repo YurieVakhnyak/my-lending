@@ -1,19 +1,14 @@
-import * as React from "react";
+import React from "react";
+import { Card, CardContent, Typography, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-
-export default function CardArticle({
+function CardArticle({
   title = "Заголовок",
-  text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   date = "01.01.2023",
   articleLink = "#",
-  maxTextLength = 100, // Максимальна кількість символів до трикрапки
+  maxTextLength = 120,
 }) {
-  // Обрізаний текст із трикрапкою
   const truncatedText =
     text.length > maxTextLength
       ? text.substring(0, maxTextLength) + "..."
@@ -22,41 +17,28 @@ export default function CardArticle({
   return (
     <Card sx={{ minWidth: 275, maxWidth: 400, margin: "16px auto" }}>
       <CardContent>
-        {/* Заголовок статті */}
-        <Typography
-          variant="h5"
-          component="div"
-          sx={{ fontWeight: "bold", marginBottom: "8px" }}
-        >
+        <Typography variant="h5" component="div" sx={{ fontWeight: "bold" }}>
           {title}
         </Typography>
-
-        {/* Дата публікації */}
         <Typography
-          sx={{ color: "text.secondary", fontSize: 14, marginBottom: "16px" }}
+          sx={{ color: "text.secondary", fontSize: 14, marginTop: "8px" }}
         >
           {date}
         </Typography>
-
-        {/* Обрізаний текст статті */}
-        <Typography variant="body2" sx={{ marginBottom: "16px" }}>
+        <Typography variant="body2" sx={{ marginTop: "16px" }}>
           {truncatedText}
         </Typography>
-      </CardContent>
-
-      {/* Кнопка з посиланням на всю статтю */}
-      <CardActions>
         <Button
-          size="small"
+          component={Link}
+          to={articleLink}
           variant="contained"
-          color="primary"
-          href={articleLink}
-          target="_blank"
-          rel="noopener noreferrer"
+          sx={{ marginTop: "16px" }}
         >
           Читати більше
         </Button>
-      </CardActions>
+      </CardContent>
     </Card>
   );
 }
+
+export default CardArticle;
