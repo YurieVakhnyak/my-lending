@@ -1,12 +1,11 @@
-import * as React from "react";
+import React from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AppointmentButton from "../components/AppointmentButton";
-import "../App.css";
 import CardVideo from "../components/CardVideo";
-import { videoLinks } from "../data/VideoLinkConstants";
+import videoData from "../data/VideoData";
 
 function MyVideos() {
   return (
@@ -21,11 +20,14 @@ function MyVideos() {
       }}
     >
       <Header />
-      <Box sx={{ display: "flex", flexWrap: "wrap" }}>
-        {videoLinks.map((videoId, index) => (
+      <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+        {videoData.map((video, index) => (
           <CardVideo
-            key={index + videoId}
-            videoUrl={`https://www.youtube.com/embed/${videoId}`}
+            key={index}
+            videoId={video.videoId}
+            title={video.title}
+            description={video.description}
+            date={video.date}
           />
         ))}
       </Box>

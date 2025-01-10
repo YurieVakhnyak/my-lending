@@ -56,7 +56,7 @@ function Appointmnent() {
                   color: green[300],
                 },
               }}
-              href="https://www.WhatsApp.com/"
+              href="https://wa.me/380688964409"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
@@ -71,10 +71,10 @@ function Appointmnent() {
                   color: blue[300],
                 },
               }}
-              href="https://www.telegram.com/"
+              href="https://t.me/yurievakhnyak"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Telegram"
+              aria-label="Зв'язатися зі мною через Telegram"
             >
               <Telegram />
             </IconButton>
@@ -86,7 +86,7 @@ function Appointmnent() {
                 //   color: blue[400],
                 // },
               }}
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/yurie.vakhnyak"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -102,10 +102,10 @@ function Appointmnent() {
                 },
               }}
               // sx={{ color: pink[300] }}
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/yurievakhnyak/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Instagram"
+              aria-label="Instagram yurievakhnyak"
             >
               <Instagram />
             </IconButton>
@@ -119,7 +119,7 @@ function Appointmnent() {
               href="tel:0660000000"
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              066-000-00-00
+              066-393-04-29
             </a>
             ,{" "}
             <a

@@ -29,7 +29,7 @@ const Footer = () => {
                 color: blue[500],
               },
             }}
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/yurie.vakhnyak"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -45,7 +45,7 @@ const Footer = () => {
               },
             }}
             // sx={{ color: pink[300] }}
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/yurievakhnyak/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -60,10 +60,10 @@ const Footer = () => {
                 color: blue[400],
               },
             }}
-            href="https://www.telegram.com/"
+            href="https://t.me/yurievakhnyak"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Telegram"
+            aria-label="Посилання на мій Telegram"
           >
             <Telegram />
           </IconButton>
@@ -75,10 +75,10 @@ const Footer = () => {
                 color: red[500],
               },
             }}
-            href="https://www.youtube.com/"
+            href="https://www.youtube.com/channel/UCBgw-k7e2s4QHg9pistr-3A"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="YouTube"
+            aria-label="YouTube канал Юрія Вахняка"
           >
             <YouTube />
           </IconButton>

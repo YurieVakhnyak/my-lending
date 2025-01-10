@@ -22,6 +22,7 @@ function Home() {
         display: "flex",
         flexDirection: "column",
         minHeight: "100vh",
+        bgcolor: "#cfe8fc",
       }}
     >
       <Header />
