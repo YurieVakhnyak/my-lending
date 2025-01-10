@@ -7,7 +7,7 @@ function CardArticle({
   text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   date = "01.01.2023",
   articleLink = "#",
-  maxTextLength = 120,
+  maxTextLength = 300,
 }) {
   const truncatedText =
     text.length > maxTextLength

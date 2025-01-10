@@ -8,7 +8,7 @@ export default function AppointmentButton() {
     <Box
       sx={{
         bgcolor: "#afe8fc",
-        // height: "100vh",
+        mt: "auto",
         display: "flex",
         justifyContent: "center",
         p: 1,
