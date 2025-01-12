@@ -20,12 +20,13 @@ function CardArticle({
         <Typography variant="h5" component="div" sx={{ fontWeight: "bold" }}>
           {title}
         </Typography>
-        <Typography
-          sx={{ color: "text.secondary", fontSize: 14, marginTop: "8px" }}
-        >
+        <Typography color="text.secondary" sx={{ fontSize: 14, marginTop: 1 }}>
           {date}
         </Typography>
-        <Typography variant="body2" sx={{ marginTop: "16px" }}>
+        <Typography
+          variant="body2"
+          sx={{ mt: 1, textAlign: "justify", textIndent: "2em" }}
+        >
           {truncatedText}
         </Typography>
         <Button

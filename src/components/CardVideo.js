@@ -25,7 +25,10 @@ export default function CardVideo({ videoId, title, description }) {
         >
           {title}
         </Typography>
-        <Typography variant="body2" sx={{ marginBottom: "16px" }}>
+        <Typography
+          variant="body2"
+          sx={{ mt: 1, textAlign: "justify", textIndent: "2em" }}
+        >
           {truncatedDescription}
         </Typography>
         <YouTubeVideo videoUrl={videoUrl} />
