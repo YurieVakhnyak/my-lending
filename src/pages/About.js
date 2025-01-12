@@ -5,8 +5,6 @@ import Typography from "@mui/material/Typography";
 import Header from "../components/Header";
 import { AboutBio } from "../data/TextConstants";
 import Footer from "../components/Footer";
-// import Card from "@mui/material/Card";
-// import CardMedia from "@mui/material/CardMedia";
 import EducationDocs from "../components/EducationDocs";
 import AppointmentButton from "../components/AppointmentButton";
 import ProgressiveImageCard from "../components/ProgressiveImageCard";
@@ -31,16 +29,12 @@ function About() {
       <Box
         sx={{
           bgcolor: "#cfe8fc",
-          // height: "85vh",
         }}
       >
         <Box
           sx={{
             bgcolor: "#cfe8fc",
-            // bgcolor: "white",
-
             p: 2,
-            // height: "50vh",
             display: "flex",
             justifyContent: "center",
             alignItems: "start",
@@ -49,34 +43,38 @@ function About() {
         >
           <Box
             // my={4}
-            display="flex"
-            alignItems="start"
+            // display="flex"
             justifyContent="center"
             gap={4}
             sx={{
               width: 700,
+              textAlign: "justify",
+              p: 3,
             }}
           >
-            <Typography variant="body1" color="text.secondary"></Typography>
-            {AboutBio}
+            {AboutBio.split("\n").map((paragraph, index) => (
+              <Typography
+                key={index}
+                variant="body1"
+                sx={{
+                  textIndent: "2em",
+                  textAlign: "justify",
+                }}
+              >
+                {paragraph}
+              </Typography>
+            ))}
           </Box>
           <ProgressiveImageCard
             lowQualityImage={lowQualityImage}
             mediumQualityImage={mediumQualityImage}
             highQualityImage={highQualityImage}
-            width={250} // Ширина картки
-            height={250} // Висота картки
+            width={200} // Ширина картки
+            height={200} // Висота картки
             title="Yurie Vakhnyak's Photo"
           />
         </Box>
-        <Box
-          p={2}
-          sx={
-            {
-              // bgcolor: "cyan",
-            }
-          }
-        >
+        <Box p={2}>
           <EducationDocs />
         </Box>
         <Box></Box>

@@ -22,10 +22,28 @@ function AboutMeShort() {
         bgcolor: "#bbdefb",
       }}
     >
-      <Box width={350}>
-        <Typography variant="body2" color="text.secondary">
+      <Box width={400} sx={{ textAlign: "justify", p: 3 }}>
+        {AboutMyProfession.split("\n").map((paragraph, index) => (
+          <Typography
+            key={index}
+            variant="body2"
+            color="text.secondary"
+            sx={{
+              textIndent: "2em",
+            }}
+          >
+            {paragraph}
+          </Typography>
+        ))}
+        {/* <Typography
+          variant="body2"
+          color="text.secondary"
+          sx={{
+            textIndent: "2em",
+          }}
+        >
           {AboutMyProfession}
-        </Typography>
+        </Typography> */}
       </Box>
       <ProgressiveImageCard
         lowQualityImage={lowQualityImage}
