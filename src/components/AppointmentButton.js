@@ -19,7 +19,7 @@ export default function AppointmentButton() {
           variant="contained"
           sx={{
             minWidth: "300px",
-            width: "80vh",
+            width: "70vw",
           }}
         >
           Записатися
