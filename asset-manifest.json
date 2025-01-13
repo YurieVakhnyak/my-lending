@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/my-lending/static/css/main.0bef6800.css",
+    "main.js": "/my-lending/static/js/main.d094ad7a.js",
+    "static/media/diplom-magistr-back.jpg": "/my-lending/static/media/diplom-magistr-back.05180dbc44a9d1cf1b75.jpg",
+    "static/media/diplom-magistr-facial.jpg": "/my-lending/static/media/diplom-magistr-facial.2524ef77f4c13531d9d1.jpg",
+    "static/media/koktebel-intensiv.jpg": "/my-lending/static/media/koktebel-intensiv.9444ad384a19e82fa84b.jpg",
+    "static/media/kherson-malyunok-dushi.jpg": "/my-lending/static/media/kherson-malyunok-dushi.de8750fbd6812bf972f9.jpg",
+    "static/media/odesa-semin-trauma.jpg": "/my-lending/static/media/odesa-semin-trauma.49292f019dd8ebf8e10a.jpg",
+    "static/media/mainphoto.jpg": "/my-lending/static/media/mainphoto.90ea2108cf7866bdf6fb.jpg",
+    "static/media/kherson-psyhosomatyka.jpg": "/my-lending/static/media/kherson-psyhosomatyka.76e9c27198e014dc3c6b.jpg",
+    "static/media/yalta-psyhotherapy-seminar-sixteen.jpg": "/my-lending/static/media/yalta-psyhotherapy-seminar-sixteen.34e7d802ed0fbdf2ec08.jpg",
+    "static/media/yalta-navch-prakt-seminar-fifteen.jpg": "/my-lending/static/media/yalta-navch-prakt-seminar-fifteen.b5f55fee1b27d894c3b5.jpg",
+    "static/media/photo_yurie_vakhnyak.jpg": "/my-lending/static/media/photo_yurie_vakhnyak.5c0ce248a74a17025ded.jpg",
+    "static/media/mainphoto-mid.jpg": "/my-lending/static/media/mainphoto-mid.c3a42f27e25be82c2232.jpg",
+    "static/media/photo_yurie_vakhnyak_mid.jpg": "/my-lending/static/media/photo_yurie_vakhnyak_mid.d1d45a61ac99275f56ab.jpg",
+    "index.html": "/my-lending/index.html",
+    "main.0bef6800.css.map": "/my-lending/static/css/main.0bef6800.css.map",
+    "main.d094ad7a.js.map": "/my-lending/static/js/main.d094ad7a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bef6800.css",
+    "static/js/main.d094ad7a.js"
+  ]
+}
