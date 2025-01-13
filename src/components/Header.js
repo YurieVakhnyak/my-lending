@@ -62,8 +62,6 @@ function Header() {
                   key={title + "1"}
                   variant="h6"
                   Wrap
-                  // component="a"
-                  // href="#app-bar-with-responsive-menu"
                   sx={{
                     display: { xs: "none", md: "flex" },
                     fontFamily: "monospace",
@@ -146,18 +144,19 @@ function Header() {
               <NavLink to="/appointment/" style={{ textDecoration: "none" }}>
                 <Typography
                   key={title}
-                  variant="h5"
+                  variant="h6"
                   noWrap
                   component="a"
-                  // href="#app-bar-with-responsive-menu"
                   sx={{
                     mr: 2,
                     display: { xs: "flex", md: "none" },
                     flexGrow: 1,
+                    fontSize: { xs: "1rem", sm: "1.5rem" },
                     fontFamily: "monospace",
                     fontWeight: 700,
                     letterSpacing: ".3rem",
-                    color: "inherit",
+
+                    color: "white",
                     "&:hover": {
                       color: green[300],
                     },

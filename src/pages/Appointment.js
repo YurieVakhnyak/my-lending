@@ -25,7 +25,7 @@ function Appointmnent() {
         sx={{
           bgcolor: "#cfe8fc",
           minHeight: "65vh",
-
+          textAlign: "center",
           display: "flex",
           justifyContent: "center",
           alignItems: "start",
@@ -43,17 +43,22 @@ function Appointmnent() {
           //   width: 700,
           // }}
         >
-          <Typography variant="h5" color="text.secondary">
+          <Typography
+            variant="h5"
+            color="text.secondary"
+            sx={{
+              textAlign: "center",
+            }}
+          >
             Для запису або запитань пишіть:
           </Typography>
-          <Box>
+          <Box sx={{ display: "flex", gap: 2 }}>
             <IconButton
-              // fontSize="large"
               component="a"
               sx={{
-                color: green[500],
+                color: green[400],
                 "&:hover": {
-                  color: green[300],
+                  color: green[500],
                 },
               }}
               href="https://wa.me/380688964409"
@@ -61,14 +66,14 @@ function Appointmnent() {
               rel="noopener noreferrer"
               aria-label="WhatsApp"
             >
-              <WhatsAppIcon />
+              <WhatsAppIcon sx={{ fontSize: "2rem" }} />
             </IconButton>
             <IconButton
               component="a"
               sx={{
-                color: blue[400],
+                color: blue[300],
                 "&:hover": {
-                  color: blue[300],
+                  color: blue[500],
                 },
               }}
               href="https://t.me/yurievakhnyak"
@@ -76,22 +81,22 @@ function Appointmnent() {
               rel="noopener noreferrer"
               aria-label="Зв'язатися зі мною через Telegram"
             >
-              <Telegram />
+              <Telegram sx={{ fontSize: "2rem" }} />
             </IconButton>
             <IconButton
               component="a"
               sx={{
-                color: blue[500],
-                // "&:hover": {
-                //   color: blue[400],
-                // },
+                color: blue[400],
+                "&:hover": {
+                  color: blue[500],
+                },
               }}
               href="https://www.facebook.com/yurie.vakhnyak"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <Facebook />
+              <Facebook sx={{ fontSize: "2rem" }} />
             </IconButton>
             <IconButton
               component="a"
@@ -107,33 +112,43 @@ function Appointmnent() {
               rel="noopener noreferrer"
               aria-label="Instagram yurievakhnyak"
             >
-              <Instagram />
+              <Instagram sx={{ fontSize: "2rem" }} />
             </IconButton>
           </Box>
-
-          <Typography variant="h6" color="text.accent">
+          <Typography variant="h6" color="text.secondary">
             або телефонуйте:{" "}
           </Typography>
-          <Typography variant="h5" color="text.accent">
+
+          <Typography
+            variant="h5"
+            color="text.secondary"
+            sx={{
+              fontSize: { xs: "1.3rem", sm: "1.5rem" },
+            }}
+          >
             <a
-              href="tel:0660000000"
+              href="tel:0663930429"
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              066-393-04-29
+              066-393-04-29,
             </a>
-            ,{" "}
+            {"  "}
             <a
-              href="tel:0680000000"
+              href="tel:0688964409"
               style={{ textDecoration: "none", color: "inherit" }}
             >
-              068-000-00-00
+              068-896-44-09
             </a>
           </Typography>
+
           <Typography variant="h6" color="text.secondary">
             Часи роботи:
           </Typography>
           <Typography variant="h5" color="text.secondary">
-            понеділок - субота з 9:00 до 19:00
+            понеділок - субота
+          </Typography>
+          <Typography variant="h5" color="text.secondary">
+            з 9:00 до 19:00
           </Typography>
         </Box>
       </Box>

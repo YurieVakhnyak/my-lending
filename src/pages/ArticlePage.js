@@ -53,7 +53,7 @@ function ArticlePage() {
       <Header />
       <Box
         sx={{
-          p: 6,
+          p: 4,
         }}
       >
         <Typography

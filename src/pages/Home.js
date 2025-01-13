@@ -53,6 +53,7 @@ function Home() {
                 textAlign: "center",
                 margin: 3,
                 color: "#42a5f5",
+                fontSize: { xs: "2.5rem", sm: "3rem", md: "4rem" },
               }}
             >
               Почни зміни з{" "}
