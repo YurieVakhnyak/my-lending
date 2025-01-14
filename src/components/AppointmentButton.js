@@ -18,8 +18,8 @@ export default function AppointmentButton() {
         <Button
           variant="contained"
           sx={{
-            minWidth: "300px",
-            maxWidth: "500px",
+            minWidth: "250px",
+            maxWidth: "400px",
             width: "70vw",
           }}
         >
