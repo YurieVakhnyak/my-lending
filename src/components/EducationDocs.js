@@ -1,18 +1,10 @@
 import React from "react";
-import { Box, Typography, CardContent } from "@mui/material";
-import { Card, CardMedia } from "@mui/material";
-import photoDiplomFacial from "../components/images/diplom-magistr-facial.jpg";
-import photoDiplomBack from "../components/images/diplom-magistr-back.jpg";
+import { Box, Typography, CardContent, CardMedia, Card } from "@mui/material";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import photoSertificatePsyhotrauma from "../components/images/odesa-semin-trauma.jpg";
-import photoSertificateIntensive from "../components/images/koktebel-intensiv.jpg";
-import photoSertificatePsyhosomatyka from "../components/images/kherson-psyhosomatyka.jpg";
-import photoSertificateMalyunokDushi from "../components/images/kherson-malyunok-dushi.jpg";
-import photoSertificateYaltaFifteen from "../components/images/yalta-navch-prakt-seminar-fifteen.jpg";
-import photoSertificateYaltaSixteen from "../components/images/yalta-psyhotherapy-seminar-sixteen.jpg";
+import { docsData } from "../data/DocsData";
 
 const EducationDocs = () => {
   return (
@@ -22,7 +14,6 @@ const EducationDocs = () => {
       </Typography>
       <Accordion sx={{ bgcolor: "#afe8fc" }}>
         <AccordionSummary
-          color="text.secondary"
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
           id="panel1-header"
@@ -32,7 +23,6 @@ const EducationDocs = () => {
         <AccordionDetails>
           <Box
             sx={{
-              color: "inherit",
               display: "flex",
               flexWrap: "wrap",
               gap: 3,
@@ -41,95 +31,23 @@ const EducationDocs = () => {
               textAlign: "center",
             }}
           >
-            <Card sx={{ maxWidth: 350 }}>
-              <CardContent>
-                <Typography gutterBottom variant="h6" component="div">
-                  Диплом магістра психології
-                </Typography>
-              </CardContent>
-              <CardMedia
-                sx={{ height: 220 }}
-                image={photoDiplomFacial}
-                title="diploma of psyhology facial side"
-              />
-              <CardMedia
-                sx={{ height: 220 }}
-                image={photoDiplomBack}
-                title="diploma of psyhology back side"
-              />
-            </Card>
-            <Card sx={{ maxWidth: 350 }}>
-              <CardContent>
-                <Typography gutterBottom variant="h6" component="div">
-                  Сертифікат "Коктебельський інтенсив"
-                </Typography>
-              </CardContent>
-              <CardMedia
-                sx={{ height: 440 }}
-                image={photoSertificateIntensive}
-                title="photo certificate intensive Koktebel"
-              />
-            </Card>
-            <Card sx={{ maxWidth: 350 }}>
-              <CardContent>
-                <Typography gutterBottom variant="h6" component="div">
-                  Сертифікат "Психосоматичні розлади"
-                </Typography>
-              </CardContent>
-              <CardMedia
-                sx={{ height: 440 }}
-                image={photoSertificatePsyhosomatyka}
-                title="photo certificate Odesa"
-              />
-            </Card>
-            <Card sx={{ maxWidth: 350 }}>
-              <CardContent>
-                <Typography gutterBottom variant="h6" component="div">
-                  Сертифікат "Малюнок душі"
-                </Typography>
-              </CardContent>
-              <CardMedia
-                sx={{ height: 440 }}
-                image={photoSertificateMalyunokDushi}
-                title="photo certificate psyhologycal festival in Kherson"
-              />
-            </Card>
-            <Card sx={{ maxWidth: 350 }}>
-              <CardContent>
-                <Typography gutterBottom variant="h6" component="div">
-                  Сертифікат міжнародний навчальнопрактичний семінар XV
-                </Typography>
-              </CardContent>
-              <CardMedia
-                sx={{ height: 440 }}
-                image={photoSertificateYaltaFifteen}
-                title="photo certificate fifteen seminar in Yalta "
-              />
-            </Card>
-            <Card sx={{ maxWidth: 350 }}>
-              <CardContent>
-                <Typography gutterBottom variant="h6" component="div">
-                  Сертифікат міжнародний навчальнопрактичний семінар XVI
-                </Typography>
-              </CardContent>
-              <CardMedia
-                sx={{ height: 440 }}
-                image={photoSertificateYaltaSixteen}
-                title="photo certificate fifteen seminar in Yalta "
-              />
-            </Card>
-            <Card sx={{ maxWidth: 600 }}>
-              <CardContent>
-                <Typography gutterBottom variant="h6" component="div">
-                  Сертифікат "Подолання психотравми"
-                </Typography>
-              </CardContent>
-              <CardMedia
-                sx={{ height: 220 }}
-                image={photoSertificatePsyhotrauma}
-                title="photo certificate Odesa"
-              />
-            </Card>
+            {docsData.map((doc) => (
+              <Card key={doc.id} sx={{ maxWidth: 350 }}>
+                <CardContent>
+                  <Typography gutterBottom variant="h6" component="div">
+                    {doc.title}
+                  </Typography>
+                </CardContent>
+                {doc.images.map((image, index) => (
+                  <CardMedia
+                    key={index}
+                    sx={{ height: doc.height }}
+                    image={image}
+                    title={doc.title}
+                  />
+                ))}
+              </Card>
+            ))}
           </Box>
         </AccordionDetails>
       </Accordion>
