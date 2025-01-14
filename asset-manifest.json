@@ -1,25 +1,32 @@
 {
   "files": {
-    "main.css": "/my-lending/static/css/main.0bef6800.css",
-    "main.js": "/my-lending/static/js/main.d094ad7a.js",
+    "main.css": "/my-lending/static/css/main.e0566e70.css",
+    "main.js": "/my-lending/static/js/main.55190daf.js",
     "static/media/diplom-magistr-back.jpg": "/my-lending/static/media/diplom-magistr-back.05180dbc44a9d1cf1b75.jpg",
     "static/media/diplom-magistr-facial.jpg": "/my-lending/static/media/diplom-magistr-facial.2524ef77f4c13531d9d1.jpg",
+    "static/media/IntroScriptR-H2Base.otf": "/my-lending/static/media/IntroScriptR-H2Base.06ccabfd7741b8abbf9a.otf",
     "static/media/koktebel-intensiv.jpg": "/my-lending/static/media/koktebel-intensiv.9444ad384a19e82fa84b.jpg",
     "static/media/kherson-malyunok-dushi.jpg": "/my-lending/static/media/kherson-malyunok-dushi.de8750fbd6812bf972f9.jpg",
     "static/media/odesa-semin-trauma.jpg": "/my-lending/static/media/odesa-semin-trauma.49292f019dd8ebf8e10a.jpg",
     "static/media/mainphoto.jpg": "/my-lending/static/media/mainphoto.90ea2108cf7866bdf6fb.jpg",
     "static/media/kherson-psyhosomatyka.jpg": "/my-lending/static/media/kherson-psyhosomatyka.76e9c27198e014dc3c6b.jpg",
     "static/media/yalta-psyhotherapy-seminar-sixteen.jpg": "/my-lending/static/media/yalta-psyhotherapy-seminar-sixteen.34e7d802ed0fbdf2ec08.jpg",
+    "static/media/Lobster.ttf": "/my-lending/static/media/Lobster.ef783f1c4ca21cdaaae3.ttf",
     "static/media/yalta-navch-prakt-seminar-fifteen.jpg": "/my-lending/static/media/yalta-navch-prakt-seminar-fifteen.b5f55fee1b27d894c3b5.jpg",
+    "static/media/KobzarKS_v1-020.otf": "/my-lending/static/media/KobzarKS_v1-020.bf8e391d68276f15e87b.otf",
+    "static/media/Ponzu-Light.otf": "/my-lending/static/media/Ponzu-Light.f6405dd1381821f0c9f8.otf",
     "static/media/photo_yurie_vakhnyak.jpg": "/my-lending/static/media/photo_yurie_vakhnyak.5c0ce248a74a17025ded.jpg",
+    "static/media/Nastup-Basic.otf": "/my-lending/static/media/Nastup-Basic.ee4cf054253b3b9a5c22.otf",
     "static/media/mainphoto-mid.jpg": "/my-lending/static/media/mainphoto-mid.c3a42f27e25be82c2232.jpg",
+    "static/media/IT Gaby Play 2023.otf": "/my-lending/static/media/IT Gaby Play 2023.517e9f3f80e1158ff636.otf",
     "static/media/photo_yurie_vakhnyak_mid.jpg": "/my-lending/static/media/photo_yurie_vakhnyak_mid.d1d45a61ac99275f56ab.jpg",
+    "static/media/Volja-Regular.otf": "/my-lending/static/media/Volja-Regular.ebcbd0d69b2ed525942d.otf",
     "index.html": "/my-lending/index.html",
-    "main.0bef6800.css.map": "/my-lending/static/css/main.0bef6800.css.map",
-    "main.d094ad7a.js.map": "/my-lending/static/js/main.d094ad7a.js.map"
+    "main.e0566e70.css.map": "/my-lending/static/css/main.e0566e70.css.map",
+    "main.55190daf.js.map": "/my-lending/static/js/main.55190daf.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bef6800.css",
-    "static/js/main.d094ad7a.js"
+    "static/css/main.e0566e70.css",
+    "static/js/main.55190daf.js"
   ]
 }
