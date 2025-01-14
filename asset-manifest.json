@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-lending/static/css/main.e0566e70.css",
-    "main.js": "/my-lending/static/js/main.55190daf.js",
+    "main.js": "/my-lending/static/js/main.c1a6c264.js",
     "static/media/diplom-magistr-back.jpg": "/my-lending/static/media/diplom-magistr-back.05180dbc44a9d1cf1b75.jpg",
     "static/media/diplom-magistr-facial.jpg": "/my-lending/static/media/diplom-magistr-facial.2524ef77f4c13531d9d1.jpg",
     "static/media/IntroScriptR-H2Base.otf": "/my-lending/static/media/IntroScriptR-H2Base.06ccabfd7741b8abbf9a.otf",
@@ -23,10 +23,10 @@
     "static/media/Volja-Regular.otf": "/my-lending/static/media/Volja-Regular.ebcbd0d69b2ed525942d.otf",
     "index.html": "/my-lending/index.html",
     "main.e0566e70.css.map": "/my-lending/static/css/main.e0566e70.css.map",
-    "main.55190daf.js.map": "/my-lending/static/js/main.55190daf.js.map"
+    "main.c1a6c264.js.map": "/my-lending/static/js/main.c1a6c264.js.map"
   },
   "entrypoints": [
     "static/css/main.e0566e70.css",
-    "static/js/main.55190daf.js"
+    "static/js/main.c1a6c264.js"
   ]
 }
