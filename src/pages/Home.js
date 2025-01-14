@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import Paper from "@mui/material/Paper";
+// import Paper from "@mui/material/Paper";
 import {
   HomeQuoteOne,
   HomeQuoteThree,
@@ -32,28 +32,30 @@ function Home() {
             bgcolor: "#afe8fc",
             display: "flex",
             justifyContent: "center",
-            alignItems: "start",
+            alignItems: "center",
             flexWrap: "wrap",
           }}
         >
           <Box
             sx={{
               display: "flex",
-              width: 500,
-
+              width: "30rem",
               justifyContent: "center",
               alignItems: "center",
               flexWrap: "wrap",
             }}
           >
             <Typography
-              variant="h2"
-              component="h2"
+              variant="h3"
+              component="h3"
               sx={{
+                // fontFamily: "Lobster",
+                fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" },
+                // letterSpacing: "0.2em",
+                // textTransform: "uppercase",
                 textAlign: "center",
                 margin: 3,
                 color: "#42a5f5",
-                fontSize: { xs: "2.5rem", sm: "3rem", md: "4rem" },
               }}
             >
               Почни зміни з{" "}
@@ -68,26 +70,64 @@ function Home() {
           </Box>
 
           <Box
-            sx={{
-              width: "40hv",
-              height: "40hv",
-            }}
+            sx={
+              {
+                // width: "40hv",
+                // height: "20hv",
+                // fontFamily: "ITGabyPlay2023",
+              }
+            }
           >
-            <Paper sx={{ p: 1, ml: 1, mt: 5 }} color="secondary" elevation={5}>
-              <Typography variant="body2" color="text.secondary">
-                {HomeQuoteOne}
-              </Typography>
-            </Paper>
-            <Paper sx={{ p: 1, ml: 1, mt: 1 }} elevation={2}>
-              <Typography variant="body2" color="text.secondary">
-                {HomeQuoteTwo}
-              </Typography>
-            </Paper>
-            <Paper sx={{ p: 1, ml: 1, mt: 1 }} elevation={2}>
-              <Typography variant="body2" color="text.secondary">
-                {HomeQuoteThree}
-              </Typography>
-            </Paper>
+            {/* <Paper
+              sx={{
+                p: 1,
+                // ml: 1, mt: 1
+              }}
+              color="secondary"
+              elevation={5}
+            > */}
+            <Typography
+              variant="body2"
+              // color="text.secondary"
+              sx={{
+                color: "green",
+                p: 1,
+                fontFamily: "KobzarKS",
+                width: "40hv",
+                height: "50hv",
+              }}
+            >
+              {HomeQuoteOne}
+            </Typography>
+            {/* </Paper> */}
+            {/* <Paper sx={{ p: 1, ml: 1, mt: 1 }} elevation={2}> */}
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              sx={{
+                fontFamily: "IntroScriptRH2Base",
+                p: 1,
+                width: "40hv",
+                height: "40hv",
+              }}
+            >
+              {HomeQuoteTwo}
+            </Typography>
+            {/* </Paper> */}
+            {/* <Paper> */}
+            <Typography
+              variant="body2"
+              // color="text.secondary"
+              sx={{
+                fontFamily: "Lobster",
+                color: "#1976d2",
+                p: 1,
+              }}
+              elevation={2}
+            >
+              {HomeQuoteThree}
+            </Typography>
+            {/* </Paper> */}
           </Box>
         </Box>
       </Box>

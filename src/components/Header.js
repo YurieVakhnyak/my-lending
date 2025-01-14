@@ -56,10 +56,10 @@ function Header() {
               p: 1,
             }}
           >
-            {title.map((title) => (
+            {title.map((title, index) => (
               <NavLink to={"/appointment/"} style={{ textDecoration: "none" }}>
                 <Button
-                  key={title + "1"}
+                  key={title + index + "key"}
                   variant="h6"
                   Wrap
                   sx={{
@@ -140,10 +140,10 @@ function Header() {
               alignItems: "center",
             }}
           >
-            {title.map((title) => (
+            {title.map((title, index) => (
               <NavLink to="/appointment/" style={{ textDecoration: "none" }}>
                 <Typography
-                  key={title}
+                  key={index + title + "list"}
                   variant="h6"
                   noWrap
                   component="a"

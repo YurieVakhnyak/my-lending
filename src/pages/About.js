@@ -37,7 +37,7 @@ function About() {
             p: 2,
             display: "flex",
             justifyContent: "center",
-            alignItems: "start",
+            alignItems: "center",
             flexWrap: "wrap",
           }}
         >
@@ -55,7 +55,8 @@ function About() {
             {AboutBio.split("\n").map((paragraph, index) => (
               <Typography
                 key={index}
-                variant="body1"
+                variant="body2"
+                color="text.secondary"
                 sx={{
                   textIndent: "2em",
                   textAlign: "justify",
