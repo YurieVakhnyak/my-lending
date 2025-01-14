@@ -49,9 +49,9 @@ function Home() {
               variant="h3"
               component="h3"
               sx={{
-                fontFamily: "Lobster",
+                // fontFamily: "Lobster",
                 fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" },
-                letterSpacing: "0.1em",
+                // letterSpacing: "0.1em",
                 // textTransform: "uppercase",
 
                 margin: 3,
@@ -70,7 +70,7 @@ function Home() {
           </Box>
 
           <Box>
-            <Typography
+            {/* <Typography
               variant="body1"
               // color="text.secondary"
               sx={{
@@ -82,23 +82,21 @@ function Home() {
               }}
             >
               {HomeQuoteOne}
-            </Typography>
+            </Typography> */}
 
             <Typography
               variant="body1"
               color="text.secondary"
               sx={{
-                fontFamily: "IntroScriptRH2Base",
-
+                fontFamily: "Lobster",
+                color: "#1976d2",
                 p: 1,
-                width: "40hv",
-                height: "40hv",
               }}
             >
               {HomeQuoteTwo}
             </Typography>
 
-            <Typography
+            {/* <Typography
               variant="body1"
               // color="text.secondary"
               sx={{
@@ -109,7 +107,7 @@ function Home() {
               elevation={2}
             >
               {HomeQuoteThree}
-            </Typography>
+            </Typography> */}
           </Box>
         </Box>
       </Box>
