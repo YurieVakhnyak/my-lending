@@ -15,13 +15,20 @@ export default function CardVideo({ videoId, title, description }) {
       : description;
 
   return (
-    <Card sx={{ minWidth: 275, maxWidth: 400, margin: "16px auto" }}>
+    <Card
+      sx={{
+        bgcolor: "#bbdefb",
+        minWidth: 275,
+        maxWidth: 400,
+        margin: "16px auto",
+      }}
+    >
       <CardContent>
         {/* Заголовок відео */}
         <Typography
           variant="h5"
           component="div"
-          sx={{ fontWeight: "bold", marginBottom: "8px" }}
+          sx={{ fontWeight: "bold", marginBottom: "8px", textAlign: "center" }}
         >
           {title}
         </Typography>

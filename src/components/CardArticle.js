@@ -15,9 +15,20 @@ function CardArticle({
       : text;
 
   return (
-    <Card sx={{ minWidth: 275, maxWidth: 400, margin: "16px auto" }}>
+    <Card
+      sx={{
+        bgcolor: "#bbdefb",
+        minWidth: 275,
+        maxWidth: 400,
+        margin: "16px auto",
+      }}
+    >
       <CardContent>
-        <Typography variant="h5" component="div" sx={{ fontWeight: "bold" }}>
+        <Typography
+          variant="h5"
+          component="div"
+          sx={{ fontWeight: "bold", textAlign: "center" }}
+        >
           {title}
         </Typography>
         <Typography color="text.secondary" sx={{ fontSize: 14, marginTop: 1 }}>
@@ -32,7 +43,7 @@ function CardArticle({
         <Button
           component={Link}
           to={articleLink}
-          variant="contained"
+          variant="text"
           sx={{ marginTop: "16px" }}
         >
           Читати більше

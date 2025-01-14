@@ -16,22 +16,13 @@ import photoSertificateYaltaSixteen from "../components/images/yalta-psyhotherap
 
 const EducationDocs = () => {
   return (
-    <Box
-    // sx={{
-    //   color: "inherit",
-    //   // bgcolor: "#1a237e",
-    //   display: "flex",
-    //   flexWrap: "wrap",
-    //   py: 3,
-    //   mt: "auto",
-    //   textAlign: "center",
-    // }}
-    >
+    <Box sx={{ color: "#0d47a1" }}>
       <Typography variant="h5" align="center">
         Дипломи та сертифікати
       </Typography>
-      <Accordion>
+      <Accordion sx={{ bgcolor: "#afe8fc" }}>
         <AccordionSummary
+          color="text.secondary"
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
           id="panel1-header"
