@@ -1,32 +1,31 @@
 {
   "files": {
-    "main.css": "/my-lending/static/css/main.e0566e70.css",
-    "main.js": "/my-lending/static/js/main.c1a6c264.js",
+    "main.css": "/my-lending/static/css/main.48930055.css",
+    "main.js": "/my-lending/static/js/main.b86d08bd.js",
     "static/media/diplom-magistr-back.jpg": "/my-lending/static/media/diplom-magistr-back.05180dbc44a9d1cf1b75.jpg",
     "static/media/diplom-magistr-facial.jpg": "/my-lending/static/media/diplom-magistr-facial.2524ef77f4c13531d9d1.jpg",
-    "static/media/IntroScriptR-H2Base.otf": "/my-lending/static/media/IntroScriptR-H2Base.06ccabfd7741b8abbf9a.otf",
-    "static/media/koktebel-intensiv.jpg": "/my-lending/static/media/koktebel-intensiv.9444ad384a19e82fa84b.jpg",
-    "static/media/kherson-malyunok-dushi.jpg": "/my-lending/static/media/kherson-malyunok-dushi.de8750fbd6812bf972f9.jpg",
-    "static/media/odesa-semin-trauma.jpg": "/my-lending/static/media/odesa-semin-trauma.49292f019dd8ebf8e10a.jpg",
+    "static/media/kherson-art-tilesna.jpg": "/my-lending/static/media/kherson-art-tilesna.a4de218daad3388b9d1a.jpg",
+    "static/media/odesa-semin-trauma.jpg": "/my-lending/static/media/odesa-semin-trauma.5a52559b35cb504c1e94.jpg",
+    "static/media/koktebel-intensiv.jpg": "/my-lending/static/media/koktebel-intensiv.00006d6a24380255580d.jpg",
+    "static/media/kherson-holotropka.jpg": "/my-lending/static/media/kherson-holotropka.632e38acf501b7601d2f.jpg",
+    "static/media/yalta-psyhotherapy-seminar-sixteen.jpg": "/my-lending/static/media/yalta-psyhotherapy-seminar-sixteen.554991769095dd36e717.jpg",
+    "static/media/kherson-malyunok-dushi-vedychiy.jpg": "/my-lending/static/media/kherson-malyunok-dushi-vedychiy.2859e302a0e622079429.jpg",
+    "static/media/kherson-malyunok-dushi-uchast.jpg": "/my-lending/static/media/kherson-malyunok-dushi-uchast.e7f5a04533d9f144369d.jpg",
+    "static/media/yalta-navch-prakt-seminar-fifteen.jpg": "/my-lending/static/media/yalta-navch-prakt-seminar-fifteen.6659ee5a2c349159aedf.jpg",
+    "static/media/kherson-therap-grupa.jpg": "/my-lending/static/media/kherson-therap-grupa.7fa433b0b588075642fb.jpg",
+    "static/media/kherson-psyhosomatyka.jpg": "/my-lending/static/media/kherson-psyhosomatyka.8c50086fae9028706e82.jpg",
     "static/media/mainphoto.jpg": "/my-lending/static/media/mainphoto.90ea2108cf7866bdf6fb.jpg",
-    "static/media/kherson-psyhosomatyka.jpg": "/my-lending/static/media/kherson-psyhosomatyka.76e9c27198e014dc3c6b.jpg",
-    "static/media/yalta-psyhotherapy-seminar-sixteen.jpg": "/my-lending/static/media/yalta-psyhotherapy-seminar-sixteen.34e7d802ed0fbdf2ec08.jpg",
+    "static/media/kherson-gestalt-konference.jpg": "/my-lending/static/media/kherson-gestalt-konference.33cd63922e1f40a7a8e3.jpg",
     "static/media/Lobster.ttf": "/my-lending/static/media/Lobster.ef783f1c4ca21cdaaae3.ttf",
-    "static/media/yalta-navch-prakt-seminar-fifteen.jpg": "/my-lending/static/media/yalta-navch-prakt-seminar-fifteen.b5f55fee1b27d894c3b5.jpg",
-    "static/media/KobzarKS_v1-020.otf": "/my-lending/static/media/KobzarKS_v1-020.bf8e391d68276f15e87b.otf",
-    "static/media/Ponzu-Light.otf": "/my-lending/static/media/Ponzu-Light.f6405dd1381821f0c9f8.otf",
     "static/media/photo_yurie_vakhnyak.jpg": "/my-lending/static/media/photo_yurie_vakhnyak.5c0ce248a74a17025ded.jpg",
-    "static/media/Nastup-Basic.otf": "/my-lending/static/media/Nastup-Basic.ee4cf054253b3b9a5c22.otf",
     "static/media/mainphoto-mid.jpg": "/my-lending/static/media/mainphoto-mid.c3a42f27e25be82c2232.jpg",
-    "static/media/IT Gaby Play 2023.otf": "/my-lending/static/media/IT Gaby Play 2023.517e9f3f80e1158ff636.otf",
     "static/media/photo_yurie_vakhnyak_mid.jpg": "/my-lending/static/media/photo_yurie_vakhnyak_mid.d1d45a61ac99275f56ab.jpg",
-    "static/media/Volja-Regular.otf": "/my-lending/static/media/Volja-Regular.ebcbd0d69b2ed525942d.otf",
     "index.html": "/my-lending/index.html",
-    "main.e0566e70.css.map": "/my-lending/static/css/main.e0566e70.css.map",
-    "main.c1a6c264.js.map": "/my-lending/static/js/main.c1a6c264.js.map"
+    "main.48930055.css.map": "/my-lending/static/css/main.48930055.css.map",
+    "main.b86d08bd.js.map": "/my-lending/static/js/main.b86d08bd.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0566e70.css",
-    "static/js/main.c1a6c264.js"
+    "static/css/main.48930055.css",
+    "static/js/main.b86d08bd.js"
   ]
 }
