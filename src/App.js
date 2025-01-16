@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Container from "@mui/material/Container";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import ScrollToTop from "./components/ScrollToTop";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import Appointment from "./pages/Appointment";
 import Articles from "./pages/Articles";
@@ -11,6 +12,7 @@ import ArticlePage from "./pages/ArticlePage";
 function App() {
   return (
     <Container disableGutters maxWidth={false}>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

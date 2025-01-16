@@ -1,4 +1,3 @@
-// DocsData.js
 import photoDiplomFacial from "../components/images/diplom-magistr-facial.jpg";
 import photoDiplomBack from "../components/images/diplom-magistr-back.jpg";
 import photoSertificatePsyhotrauma from "../components/images/odesa-semin-trauma.jpg";

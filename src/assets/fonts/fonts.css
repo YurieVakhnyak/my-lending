@@ -1,42 +1,6 @@
 @font-face {
-  font-family: "PonzuLight"; /* Назва шрифту */
-  src: url("./Ponzu-Light.otf") format("opentype"); /* Шлях до файлу */
-  font-weight: normal; /* Варіант ваги */
-  font-style: normal; /* Варіант стилю */
-}
-@font-face {
-  font-family: "ITGabyPlay2023"; /* Назва шрифту */
-  src: url("./IT\ Gaby\ Play\ 2023.otf") format("opentype"); /* Шлях до файлу */
-  font-weight: normal; /* Варіант ваги */
-  font-style: normal; /* Варіант стилю */
-}
-@font-face {
-  font-family: "KobzarKS"; /* Назва шрифту */
-  src: url("./KobzarKS_v1-020.otf") format("opentype"); /* Шлях до файлу */
-  font-weight: normal; /* Варіант ваги */
-  font-style: normal; /* Варіант стилю */
-}
-@font-face {
-  font-family: "VoljaRegular"; /* Назва шрифту */
-  src: url("./Volja-Regular.otf") format("opentype"); /* Шлях до файлу */
-  font-weight: normal; /* Варіант ваги */
-  font-style: normal; /* Варіант стилю */
-}
-@font-face {
-  font-family: "NastupBasic"; /* Назва шрифту */
-  src: url("./Nastup-Basic.otf") format("opentype"); /* Шлях до файлу */
-  font-weight: normal; /* Варіант ваги */
-  font-style: normal; /* Варіант стилю */
-}
-@font-face {
   font-family: "Lobster"; /* Назва шрифту */
   src: url("./Lobster.ttf") format("opentype"); /* Шлях до файлу */
-  font-weight: normal; /* Варіант ваги */
-  font-style: normal; /* Варіант стилю */
-}
-@font-face {
-  font-family: "IntroScriptRH2Base"; /* Назва шрифту */
-  src: url("./IntroScriptR-H2Base.otf") format("opentype"); /* Шлях до файлу */
   font-weight: normal; /* Варіант ваги */
   font-style: normal; /* Варіант стилю */
 }

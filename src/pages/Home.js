@@ -8,9 +8,11 @@ import {
   // HomeQuoteThree,
   HomeQuoteTwo,
 } from "../data/TextConstants";
+// import { CardMedia, Card } from "@mui/material";
 import AboutMeShort from "../components/AboutMeShort";
 import AppointmentButton from "../components/AppointmentButton";
 import Footer from "../components/Footer";
+// import imageTitleText from "../components/images/exp/photo_2025-01-15_12-41-47.jpg";
 
 function Home() {
   return (
@@ -36,6 +38,13 @@ function Home() {
             textAlign: "center",
           }}
         >
+          {/* <Card sx={{ mt: 2, minWidth: 450, maxWidth: 500 }}>
+            <CardMedia
+              sx={{ height: "40vh" }}
+              image={imageTitleText}
+              title="Почни зміни"
+            />
+          </Card> */}
           <Box
             sx={{
               display: "flex",
