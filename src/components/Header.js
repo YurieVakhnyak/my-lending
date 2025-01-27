@@ -14,7 +14,7 @@ import { blue, green, grey } from "@mui/material/colors";
 import { NavLink } from "react-router-dom";
 
 const pages = ["HOME", "Про мене", "Статті", "Відео", "Записатися"];
-const title = ["ПСИХОЛОГ", "ONLINE"];
+const title = ["ПСИХОЛОГ", "ЮРІЙ ВАХНЯК"];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -58,14 +58,15 @@ function Header() {
           >
             {title.map((title, index) => (
               <NavLink to={"/appointment/"} style={{ textDecoration: "none" }}>
-                <Button
+                <Typography
                   key={title + index + "key"}
-                  variant="h6"
+                  variant="h1"
                   Wrap
                   sx={{
                     display: { xs: "none", md: "flex" },
                     fontFamily: "monospace",
                     fontWeight: 700,
+                    fontSize: { xs: "0.8rem", sm: "1rem" },
                     letterSpacing: title === "ONLINE" ? ".3rem" : "normal",
                     color: "white",
                     "&:hover": {
@@ -74,7 +75,7 @@ function Header() {
                   }}
                 >
                   {title}
-                </Button>{" "}
+                </Typography>{" "}
               </NavLink>
             ))}
           </Box>
@@ -144,14 +145,14 @@ function Header() {
               <NavLink to="/appointment/" style={{ textDecoration: "none" }}>
                 <Typography
                   key={index + title + "list"}
-                  variant="h6"
+                  variant="h1"
                   noWrap
                   component="a"
                   sx={{
                     mr: 2,
                     display: { xs: "flex", md: "none" },
                     flexGrow: 1,
-                    fontSize: { xs: "1rem", sm: "1.5rem" },
+                    fontSize: { xs: "0.8rem", sm: "1.5rem" },
                     fontFamily: "monospace",
                     fontWeight: 700,
                     letterSpacing: ".3rem",
