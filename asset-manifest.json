@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-lending/static/css/main.48930055.css",
-    "main.js": "/my-lending/static/js/main.b86d08bd.js",
+    "main.js": "/my-lending/static/js/main.966affe1.js",
     "static/media/diplom-magistr-back.jpg": "/my-lending/static/media/diplom-magistr-back.05180dbc44a9d1cf1b75.jpg",
     "static/media/diplom-magistr-facial.jpg": "/my-lending/static/media/diplom-magistr-facial.2524ef77f4c13531d9d1.jpg",
     "static/media/kherson-art-tilesna.jpg": "/my-lending/static/media/kherson-art-tilesna.a4de218daad3388b9d1a.jpg",
@@ -22,10 +22,10 @@
     "static/media/photo_yurie_vakhnyak_mid.jpg": "/my-lending/static/media/photo_yurie_vakhnyak_mid.d1d45a61ac99275f56ab.jpg",
     "index.html": "/my-lending/index.html",
     "main.48930055.css.map": "/my-lending/static/css/main.48930055.css.map",
-    "main.b86d08bd.js.map": "/my-lending/static/js/main.b86d08bd.js.map"
+    "main.966affe1.js.map": "/my-lending/static/js/main.966affe1.js.map"
   },
   "entrypoints": [
     "static/css/main.48930055.css",
-    "static/js/main.b86d08bd.js"
+    "static/js/main.966affe1.js"
   ]
 }
