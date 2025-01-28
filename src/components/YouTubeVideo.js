@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@mui/material";
 
 const YouTubeVideo = ({
-  videoUrl = "https://www.youtube.com/embed/e4whufQDnU0",
+  videoUrl = "https://www.youtube-nocookie.com/embed/e4whufQDnU0",
 }) => {
   return (
     <Box
