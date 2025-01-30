@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import YouTubeVideo from "./YouTubeVideo";
 
 export default function CardVideo({ videoId, title, description }) {
-  const videoUrl = `https://www.youtube.com/embed/${videoId}`;
+  const videoUrl = `https://www.youtube-nocookie.com/embed/${videoId}`;
   const maxDescriptionLength = 200;
 
   // Обрізаний текст опису відео

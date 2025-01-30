@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import AppointmentButton from "../components/AppointmentButton";
 import CardVideo from "../components/CardVideo";
 import videoData from "../data/VideoData";
+import CookieBanner from "../components/CookieBanner";
 
 function MyVideos() {
   return (
@@ -31,6 +32,7 @@ function MyVideos() {
           />
         ))}
       </Box>
+      <CookieBanner />
       <AppointmentButton />
       <Footer />
     </Container>

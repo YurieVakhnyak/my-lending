@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AppointmentButton from "../components/AppointmentButton";
 import CardArticle from "../components/CardArticle";
+// import Typography from "@mui/material/Typography";
 import "../App.css";
 import { articleData } from "../data/ArticleData";
 
@@ -21,6 +22,15 @@ function Articles() {
       }}
     >
       <Header />
+      {/* <Box
+      // sx={{ display: "flex", flexWrap: "wrap" }}
+      >
+        {articleData.map((article, index) => (
+          <Typography key={index + 1000}>
+            {index + 1}. {article.title}
+          </Typography>
+        ))}
+      </Box> */}
       <Box sx={{ display: "flex", flexWrap: "wrap" }}>
         {articleData.map((article, index) => (
           <CardArticle

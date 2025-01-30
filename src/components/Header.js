@@ -10,7 +10,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import PhonelinkTwoToneIcon from "@mui/icons-material/PhonelinkTwoTone";
-import { blue, green, grey } from "@mui/material/colors";
+import { blue, grey } from "@mui/material/colors";
 import { NavLink } from "react-router-dom";
 
 const pages = ["HOME", "Про мене", "Статті", "Відео", "Записатися"];
@@ -70,7 +70,7 @@ function Header() {
                     letterSpacing: title === "ONLINE" ? ".3rem" : "normal",
                     color: "white",
                     "&:hover": {
-                      color: green[300],
+                      color: blue[100],
                     },
                   }}
                 >
@@ -159,7 +159,7 @@ function Header() {
 
                     color: "white",
                     "&:hover": {
-                      color: green[300],
+                      color: blue[100],
                     },
                   }}
                 >
@@ -187,7 +187,7 @@ function Header() {
                     color: "white",
 
                     "&:hover": {
-                      color: green[300],
+                      color: blue[100],
                     },
 
                     display: "block",
