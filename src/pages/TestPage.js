@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Footer from "../components/Footer";
 import { testsData } from "./../data/TestsData"; // Імпортуємо дані
+import HADSTest from "../components/HADSTest";
 
 function TestPage() {
   const { id } = useParams();
@@ -38,6 +39,9 @@ function TestPage() {
         <Typography variant="body1" sx={{ mt: 2, textIndent: "2em" }}>
           {test.testDescription}
         </Typography>
+      </Box>
+      <Box>
+        <HADSTest />
       </Box>
       <Footer />
     </Container>
