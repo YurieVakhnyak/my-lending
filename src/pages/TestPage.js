@@ -39,6 +39,9 @@ function TestPage() {
         <Typography variant="body1" sx={{ mt: 2, textIndent: "2em" }}>
           {test.testDescription}
         </Typography>
+        <Typography variant="body1" sx={{ mt: 2, textIndent: "2em" }}>
+          {test.testInstruction}
+        </Typography>
       </Box>
       <Box>
         <HADSTest />
