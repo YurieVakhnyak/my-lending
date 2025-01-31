@@ -7,6 +7,7 @@ import Container from "@mui/material/Container";
 import Footer from "../components/Footer";
 import CardTest from "../components/CardTest";
 import { testsData } from "../data/TestsData";
+import { TestsPageMainText } from "../data/TextConstants";
 
 function Tests() {
   const [tests, setTests] = useState([]);
@@ -34,9 +35,7 @@ function Tests() {
           color="text.secondary"
           sx={{ textIndent: "2em" }}
         >
-          Усі тести та скринінги представлені з ознайомчою метою для того щоб
-          зорієнтуватися у вашому стані. Не варто ставити собі діагнози на їх
-          основі.
+          {TestsPageMainText}
         </Typography>
       </Box>
       <Box sx={{ display: "flex", flexWrap: "wrap" }}>
@@ -54,7 +53,7 @@ function Tests() {
             variant="h6"
             sx={{ textAlign: "center", width: "100%", mt: 3 }}
           >
-            Даних немає 😔
+            Завантаження триває...
           </Typography>
         )}
       </Box>
