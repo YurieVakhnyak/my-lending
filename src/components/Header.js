@@ -13,7 +13,7 @@ import PhonelinkTwoToneIcon from "@mui/icons-material/PhonelinkTwoTone";
 import { blue, grey } from "@mui/material/colors";
 import { NavLink } from "react-router-dom";
 
-const pages = ["HOME", "Про мене", "Статті", "Відео", "Записатися"];
+const pages = ["HOME", "Тести", "Статті", "Відео", "Про мене", "Записатися"];
 const title = ["ПСИХОЛОГ", "ЮРІЙ ВАХНЯК"];
 
 function Header() {
@@ -30,6 +30,7 @@ function Header() {
   const routes = {
     HOME: "/",
     "Про мене": "/about",
+    Тести: "/tests",
     Статті: "/articles",
     Відео: "/videos",
     Записатися: "/appointment",

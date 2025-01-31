@@ -8,6 +8,8 @@ import Appointment from "./pages/Appointment";
 import Articles from "./pages/Articles";
 import MyVideos from "./pages/MyVideos";
 import ArticlePage from "./pages/ArticlePage";
+import Tests from "./pages/Tests";
+import TestPage from "./pages/TestPage";
 
 function App() {
   return (
@@ -15,10 +17,12 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/tests" element={<Tests />} />
+        <Route path="/tests/:id" element={<TestPage />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/articles/:id" element={<ArticlePage />} />
         <Route path="/videos" element={<MyVideos />} />
+        <Route path="/about" element={<About />} />
         <Route path="/appointment" element={<Appointment />} />
       </Routes>
       <ScrollToTopButton />
