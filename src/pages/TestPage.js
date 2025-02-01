@@ -32,7 +32,7 @@ function TestPage() {
       }}
     >
       <Header />
-      <Box sx={{ p: 3 }}>
+      <Container>
         <Typography variant="h4" sx={{ textAlign: "center" }}>
           {test.testTitle}
         </Typography>
@@ -42,7 +42,7 @@ function TestPage() {
         <Typography variant="body1" sx={{ mt: 2, textIndent: "2em" }}>
           {test.testInstruction}
         </Typography>
-      </Box>
+      </Container>
       <Box>
         <HADSTest />
       </Box>
