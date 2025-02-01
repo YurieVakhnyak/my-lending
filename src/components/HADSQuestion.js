@@ -18,7 +18,7 @@ const HADSQuestion = ({ question, onAnswer }) => {
   };
 
   return (
-    <Container sx={{ textAlign: "justify" }}>
+    <Container sx={{ textAlign: "justify", mb: 3 }}>
       <FormControl component="fieldset" fullWidth>
         <FormLabel>{question.text}</FormLabel>
         <RadioGroup value={value} onChange={handleChange}>
