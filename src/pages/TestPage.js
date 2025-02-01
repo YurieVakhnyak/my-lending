@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Header from "../components/Header";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -7,6 +7,7 @@ import Container from "@mui/material/Container";
 import Footer from "../components/Footer";
 import { testsData } from "./../data/TestsData"; // Імпортуємо дані
 import HADSTest from "../components/HADSTest";
+import WarningMessage from "../components/WarningMessage";
 
 function TestPage() {
   const { id } = useParams();
@@ -14,7 +15,7 @@ function TestPage() {
 
   if (!test) {
     return (
-      <Container>
+      <Container sx={{ p: 2 }}>
         <Typography variant="h4">Тест не знайдено</Typography>
       </Container>
     );
@@ -32,12 +33,38 @@ function TestPage() {
       }}
     >
       <Header />
-      <Container>
-        <Typography variant="h4" sx={{ textAlign: "center" }}>
+      <Container sx={{ p: 2, textAlign: "justify" }}>
+        <WarningMessage />
+        <Typography variant="h4" color="inherit" sx={{ textAlign: "center" }}>
           {test.testTitle}
         </Typography>
+
         <Typography variant="body1" sx={{ mt: 2, textIndent: "2em" }}>
           {test.testDescription}
+        </Typography>
+        <Link
+          to={
+            "https://www.svri.org/sites/default/files/attachments/2016-01-13/HADS.pdf"
+          }
+        >
+          {" "}
+          <Typography
+            variant="body1"
+            color="primary.main"
+            sx={{
+              fontWeight: 600,
+              mt: 2,
+              textIndent: "2em",
+            }}
+          >
+            HADS (pdf)
+          </Typography>
+        </Link>
+        <Typography
+          variant="body1"
+          sx={{ fontWeight: 600, mt: 2, textIndent: "2em" }}
+        >
+          Інструкція:
         </Typography>
         <Typography variant="body1" sx={{ mt: 2, textIndent: "2em" }}>
           {test.testInstruction}

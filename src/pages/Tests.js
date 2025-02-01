@@ -7,7 +7,7 @@ import Container from "@mui/material/Container";
 import Footer from "../components/Footer";
 import CardTest from "../components/CardTest";
 import { testsData } from "../data/TestsData";
-import { TestsPageMainText } from "../data/TextConstants";
+import WarningMessage from "../components/WarningMessage";
 
 function Tests() {
   const [tests, setTests] = useState([]);
@@ -30,13 +30,7 @@ function Tests() {
     >
       <Header />
       <Box sx={{ p: 2 }}>
-        <Typography
-          variant="body2"
-          color="text.secondary"
-          sx={{ textIndent: "2em" }}
-        >
-          {TestsPageMainText}
-        </Typography>
+        <WarningMessage />
       </Box>
       <Box sx={{ display: "flex", flexWrap: "wrap" }}>
         {tests.length > 0 ? (

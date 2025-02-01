@@ -50,7 +50,7 @@ function Appointmnent() {
               textAlign: "center",
             }}
           >
-            Для запису або запитань пишіть:
+            Для запису на онлайн-консультацію або запитань пишіть:
           </Typography>
           <Box sx={{ display: "flex", gap: 2 }}>
             <IconButton

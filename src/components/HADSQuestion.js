@@ -5,7 +5,7 @@ import {
   RadioGroup,
   FormControlLabel,
   Radio,
-  Box,
+  Container,
   Typography,
 } from "@mui/material";
 
@@ -18,7 +18,7 @@ const HADSQuestion = ({ question, onAnswer }) => {
   };
 
   return (
-    <Box sx={{ p: 2 }}>
+    <Container sx={{ textAlign: "justify" }}>
       <FormControl component="fieldset" fullWidth>
         <FormLabel>{question.text}</FormLabel>
         <RadioGroup value={value} onChange={handleChange}>
@@ -34,7 +34,7 @@ const HADSQuestion = ({ question, onAnswer }) => {
           ))}
         </RadioGroup>
       </FormControl>
-    </Box>
+    </Container>
   );
 };
 

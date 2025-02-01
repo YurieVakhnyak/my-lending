@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Box, Button } from "@mui/material";
+import { Container, Box, Button } from "@mui/material";
 import HADSQuestion from "./HADSQuestion";
 import { HADSData } from "../data/HADSData";
 
@@ -37,23 +37,29 @@ const HADSTest = () => {
   };
 
   return (
-    <Box
-      sx={{
-        p: 3,
-      }}
-    >
+    <Container sx={{ p: 2 }}>
       {HADSData.map((q) => (
         <HADSQuestion key={q.id} question={q} onAnswer={handleAnswer} />
       ))}
-      <Button
-        variant="contained"
-        color="primary"
-        onClick={handleSubmit}
-        disabled={!isFormComplete} // Задаємо вимкнену кнопку, якщо форма не заповнена
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: { xs: "center", sm: "flex-start" }, // По центру на малих, зліва на великих
+          mt: 2,
+          mb: 2,
+          pl: { sm: 3 }, // Додає відступ ліворуч тільки на великих екранах
+        }}
       >
-        Отримати результати
-      </Button>
-    </Box>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={handleSubmit}
+          disabled={!isFormComplete}
+        >
+          Отримати результати
+        </Button>
+      </Box>
+    </Container>
   );
 };
 
