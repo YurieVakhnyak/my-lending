@@ -1,6 +1,6 @@
 {
   "name": "Психолог Юрій Вахняк",
-  "short_name": "Психолог",
+  "short_name": "Юрій Вахняк",
   "icons": [
     {
       "src": "/logo192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#FFFFFF",
+  "theme_color": "#000000",
   "background_color": "#FFFFFF",
   "display": "standalone"
 }
