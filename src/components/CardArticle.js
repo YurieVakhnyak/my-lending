@@ -35,11 +35,17 @@ function CardArticle({
           {date}
         </Typography>
         <Typography
+          variant="body1"
+          sx={{ textAlign: "justify", textIndent: "2em" }}
+          component="div"
+          dangerouslySetInnerHTML={{ __html: truncatedText }}
+        />
+        {/* <Typography
           variant="body2"
           sx={{ mt: 1, textAlign: "justify", textIndent: "2em" }}
         >
           {truncatedText}
-        </Typography>
+        </Typography> */}
         <Button
           component={Link}
           to={articleLink}

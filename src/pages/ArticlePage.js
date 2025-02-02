@@ -67,7 +67,7 @@ function ArticlePage() {
         >
           {article.title}
         </Typography>
-        {article.text.split("\n").map((paragraph, index) => (
+        {/* {article.text.split("\n").map((paragraph, index) => (
           <Typography
             key={index}
             variant="body1"
@@ -79,7 +79,14 @@ function ArticlePage() {
           >
             {paragraph}
           </Typography>
-        ))}
+        ))} */}
+        <Typography
+          variant="body1"
+          sx={{ textAlign: "justify", textIndent: "2em" }}
+          component="div"
+          dangerouslySetInnerHTML={{ __html: article.text }}
+        />
+        ;
       </Box>
 
       <Footer />
