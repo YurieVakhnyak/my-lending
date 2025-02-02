@@ -2,7 +2,6 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { articleData } from "../data/ArticleData"; // імпорт даних статей
 import Container from "@mui/material/Container";
-import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -51,11 +50,8 @@ function ArticlePage() {
       }}
     >
       <Header />
-      <Box
-        sx={{
-          p: 4,
-        }}
-      >
+      <Container sx={{ p: 2, textAlign: "justify" }}>
+        >
         <Typography
           variant="h4"
           sx={{
@@ -87,7 +83,7 @@ function ArticlePage() {
           dangerouslySetInnerHTML={{ __html: article.text }}
         />
         ;
-      </Box>
+      </Container>
 
       <Footer />
     </Container>

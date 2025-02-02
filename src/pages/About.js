@@ -39,11 +39,10 @@ function About() {
             justifyContent: "center",
             alignItems: "center",
             flexWrap: "wrap",
+            flexGrow: 1,
           }}
         >
           <Box
-            // my={4}
-            // display="flex"
             justifyContent="center"
             gap={4}
             sx={{
@@ -75,12 +74,11 @@ function About() {
             title="Yurie Vakhnyak's Photo"
           />
         </Box>
-        <Box p={2}>
+        <Box p={2} sx={{ mt: "auto" }}>
           <EducationDocs />
         </Box>
-        <Box></Box>
       </Box>
-      <AppointmentButton />
+      <AppointmentButton sx={{ mt: "auto" }} />
       <Footer />
     </Container>
   );

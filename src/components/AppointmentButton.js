@@ -7,7 +7,7 @@ export default function AppointmentButton() {
   return (
     <Box
       sx={{
-        bgcolor: "#afe8fc",
+        bgcolor: "#cfe8fc",
         mt: "auto",
         display: "flex",
         justifyContent: "center",

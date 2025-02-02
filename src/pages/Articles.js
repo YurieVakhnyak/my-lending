@@ -22,15 +22,6 @@ function Articles() {
       }}
     >
       <Header />
-      {/* <Box
-      // sx={{ display: "flex", flexWrap: "wrap" }}
-      >
-        {articleData.map((article, index) => (
-          <Typography key={index + 1000}>
-            {index + 1}. {article.title}
-          </Typography>
-        ))}
-      </Box> */}
       <Box sx={{ display: "flex", flexWrap: "wrap" }}>
         {articleData.map((article, index) => (
           <CardArticle
