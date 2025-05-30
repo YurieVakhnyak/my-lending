@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import CardTest from "../components/CardTest";
 import { testsData } from "../data/TestsData";
 import WarningMessage from "../components/WarningMessage";
+import { transliterate } from "../utils/Transliterate";
 
 function Tests() {
   const [tests, setTests] = useState([]);
@@ -39,7 +40,7 @@ function Tests() {
               key={index + "test"}
               testTitle={test.testTitle}
               testDescription={test.testDescription}
-              testLink={`/tests/${index}`}
+              testLink={`/tests/${transliterate(test.testTitle)}`}
             />
           ))
         ) : (

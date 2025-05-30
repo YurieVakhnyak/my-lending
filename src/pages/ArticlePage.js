@@ -1,16 +1,17 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { articleData } from "../data/ArticleData"; // імпорт даних статей
+import { articleData } from "../data/ArticleData";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { transliterate } from "../utils/Transliterate";
 import AppointmentButton from "../components/AppointmentButton";
 
 function ArticlePage() {
-  const { id } = useParams(); // Отримуємо параметр id з маршруту
-  const article = articleData[id]; // Знаходимо статтю за індексом
+  const { id } = useParams();
 
+  const article = articleData.find((a) => transliterate(a.title) === id);
   if (!article) {
     return (
       <Container
@@ -51,11 +52,9 @@ function ArticlePage() {
     >
       <Header />
       <Container sx={{ p: 2, textAlign: "justify" }}>
-        >
         <Typography
           variant="h4"
           sx={{
-            // marginTop: 2,
             marginBottom: 1,
             fontWeight: "bold",
             textAlign: "center",
@@ -63,19 +62,6 @@ function ArticlePage() {
         >
           {article.title}
         </Typography>
-        {/* {article.text.split("\n").map((paragraph, index) => (
-          <Typography
-            key={index}
-            variant="body1"
-            sx={{
-              textIndent: "2em",
-              marginBottom: 1,
-              textAlign: "justify",
-            }}
-          >
-            {paragraph}
-          </Typography>
-        ))} */}
         <Typography
           variant="body1"
           sx={{ textAlign: "justify", textIndent: "2em" }}

@@ -33,7 +33,7 @@ export const docsData = [
   },
   {
     id: 4,
-    title: 'Сертифікат "Малюнок душі" (ведучій групи)',
+    title: 'Сертифікат "Малюнок душі" (ведучий групи)',
     images: [photoSertificateMalyunokDushi],
     height: 440,
   },

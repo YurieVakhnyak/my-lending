@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AppointmentButton from "../components/AppointmentButton";
 import CardArticle from "../components/CardArticle";
-// import Typography from "@mui/material/Typography";
+import { transliterate } from "../utils/Transliterate";
 import "../App.css";
 import { articleData } from "../data/ArticleData";
 
@@ -29,7 +29,7 @@ function Articles() {
             title={article.title}
             text={article.text}
             date={article.date}
-            articleLink={`/articles/${index}`} // Генеруємо маршрут для статті
+            articleLink={`/articles/${transliterate(article.title)}`} // Генеруємо маршрут для статті
           />
         ))}
       </Box>

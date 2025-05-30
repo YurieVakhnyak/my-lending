@@ -5,13 +5,14 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Footer from "../components/Footer";
-import { testsData } from "./../data/TestsData"; // Імпортуємо дані
+import { testsData } from "./../data/TestsData";
 import HADSTest from "../components/HADSTest";
 import WarningMessage from "../components/WarningMessage";
+import { transliterate } from "../utils/Transliterate";
 
 function TestPage() {
   const { id } = useParams();
-  const test = testsData[id]; // Отримуємо тест за id
+  const test = testsData.find((t) => transliterate(t.testTitle) === id); // Отримуємо тест за id
 
   if (!test) {
     return (
