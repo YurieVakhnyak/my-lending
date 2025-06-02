@@ -1,17 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { articleData } from "../data/ArticleData";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { transliterate } from "../utils/Transliterate";
 import AppointmentButton from "../components/AppointmentButton";
 
 function ArticlePage() {
+  const [article, setArticle] = useState(null);
+  const [loading, setLoading] = useState(true);
   const { id } = useParams();
 
-  const article = articleData.find((a) => transliterate(a.title) === id);
+  useEffect(() => {
+    fetch("/data/articles/index.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const found = data.find((a) => a.slug === id);
+        setArticle(found || null);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Помилка при завантаженні статей:", err);
+        setArticle(null);
+        setLoading(false);
+      });
+  }, [id]);
+
+  if (loading) {
+    return (
+      <Container>
+        <Typography>Завантаження...</Typography>
+      </Container>
+    );
+  }
+
   if (!article) {
     return (
       <Container
@@ -25,14 +47,12 @@ function ArticlePage() {
         }}
       >
         <Header />
-
         <Typography
           variant="h5"
           sx={{ marginTop: "16px", textAlign: "center" }}
         >
           Стаття не знайдена
         </Typography>
-
         <AppointmentButton />
         <Footer />
       </Container>
@@ -68,9 +88,7 @@ function ArticlePage() {
           component="div"
           dangerouslySetInnerHTML={{ __html: article.text }}
         />
-        ;
       </Container>
-
       <Footer />
     </Container>
   );

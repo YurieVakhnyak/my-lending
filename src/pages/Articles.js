@@ -1,15 +1,21 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AppointmentButton from "../components/AppointmentButton";
 import CardArticle from "../components/CardArticle";
-import { transliterate } from "../utils/Transliterate";
 import "../App.css";
-import { articleData } from "../data/ArticleData";
 
 function Articles() {
+  const [articleData, setArticleData] = useState([]);
+
+  useEffect(() => {
+    fetch("/data/articles/index.json")
+      .then((res) => res.json())
+      .then((data) => setArticleData(data));
+  }, []);
+
   return (
     <Container
       disableGutters
@@ -29,7 +35,7 @@ function Articles() {
             title={article.title}
             text={article.text}
             date={article.date}
-            articleLink={`/articles/${transliterate(article.title)}`} // Генеруємо маршрут для статті
+            articleLink={`/articles/${article.slug}`} // Генеруємо маршрут для статті
           />
         ))}
       </Box>

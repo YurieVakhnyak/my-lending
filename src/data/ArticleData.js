@@ -54,7 +54,7 @@ export const articleData = [
 <div>&nbsp;</div>
 </div>`,
     date: "29.03.2011",
-    // articleLink: "https://example.com/article-1",
+
     maxTextLength: 120,
   },
   {
@@ -95,7 +95,6 @@ export const articleData = [
 <div>&nbsp;</div>
 </div>`,
     date: "27.03.2009",
-    // articleLink: "https://example.com/article-2",
   },
   {
     title: `Що таке сором та як боротися з хворобливим соромом? Теорія та практика`,
@@ -312,10 +311,9 @@ export const articleData = [
 <div><br />&nbsp;</div>`,
     date: "27.01.2025",
   },
-
-  // {
-  //   title: ``,
-  //   text: ``,
-  //   date: "27.01.2025",
-  // },
 ];
+// {
+//   title: ``,
+//   text: ``,
+//   date: "1.1.2025",
+// },
