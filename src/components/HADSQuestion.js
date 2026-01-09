@@ -20,7 +20,9 @@ const HADSQuestion = ({ question, onAnswer }) => {
   return (
     <Container sx={{ textAlign: "justify", mb: 3 }}>
       <FormControl component="fieldset" fullWidth>
-        <FormLabel>{question.text}</FormLabel>
+        <FormLabel sx={{ fontSize: "1.3rem" }}>
+          {question.id}. {question.text}
+        </FormLabel>
         <RadioGroup value={value} onChange={handleChange}>
           {question.options.map((option) => (
             <FormControlLabel

@@ -150,6 +150,9 @@ function Appointmnent() {
           <Typography variant="h5" color="text.secondary">
             з 9:00 до 19:00
           </Typography>
+          <Typography variant="h5" color="text.secondary">
+            Вартість консультації - 1000 грн за зустріч (50хв)
+          </Typography>
         </Box>
       </Box>
 
