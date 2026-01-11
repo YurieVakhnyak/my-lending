@@ -10,6 +10,7 @@ import mediumQualityImage from "../components/images/mainphoto-mid.jpg";
 import highQualityImage from "../components/images/mainphoto.jpg";
 import { AboutMyProfession } from "../data/TextConstants";
 
+
 function AboutMeShort() {
   return (
     <Box
@@ -35,15 +36,7 @@ function AboutMeShort() {
             {paragraph}
           </Typography>
         ))}
-        {/* <Typography
-          variant="body2"
-          color="text.secondary"
-          sx={{
-            textIndent: "2em",
-          }}
-        >
-          {AboutMyProfession}
-        </Typography> */}
+      
       </Box>
       <ProgressiveImageCard
         lowQualityImage={lowQualityImage}

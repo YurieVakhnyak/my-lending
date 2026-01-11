@@ -7,23 +7,24 @@ export default function AppointmentButton() {
   return (
     <Box
       sx={{
-        bgcolor: "#cfe8fc",
+       bgcolor: "#bbdefb",
         mt: "auto",
         display: "flex",
         justifyContent: "center",
         p: 1,
       }}
     >
-      <NavLink to={"/appointment/"} style={{ textDecoration: "none" }}>
+      <NavLink to={"/about/"} style={{ textDecoration: "none" }}>
         <Button
-          variant="contained"
+          variant="outlined"
           sx={{
+            
             minWidth: "250px",
             maxWidth: "400px",
             width: "70vw",
           }}
         >
-          Записатися на консультацію
+          Більше інформації
         </Button>
       </NavLink>
     </Box>
