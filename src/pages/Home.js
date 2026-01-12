@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import AboutMeShort from "../components/AboutMeShort";
 import HowToStart from "../components/HowToStart";
 import AppointmentButton from "../components/AppointmentButton";
-import WhoIWorkWith from "../components/WhoIWorkWith";
+import AreasOfWork from "../components/AreasOfWork";
 import MoreButton from "../components/MoreButton";
 import Reveal from "../components/Reveal";
 
@@ -29,14 +29,14 @@ function Home() {
         </Box>
       </Reveal>
       <Divider />    
-        <Box><WhoIWorkWith /></Box>     
+        <Box><AreasOfWork /></Box>     
 
       {/* HOW TO START */}
-      <Reveal>
+     
       <Box component="section" id="how-to-start">
         <HowToStart short />
       </Box>
-      </Reveal>
+    
 
       {/* CTA */}
       <Box

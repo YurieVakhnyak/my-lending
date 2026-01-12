@@ -4,6 +4,7 @@ import ChatIcon from "@mui/icons-material/Chat";
 import VideoChatIcon from "@mui/icons-material/VideoChat";
 import PaymentIcon from "@mui/icons-material/Payment";
 import EventAvailableIcon from "@mui/icons-material/EventAvailable";
+import Reveal from "./Reveal";
 
 const steps = [
   {
@@ -31,31 +32,35 @@ const steps = [
 function HowToStart() {
   return (
     <Box sx={{ py: 3, px: 2, maxWidth: 1100, margin: "0 auto" }}>
-      <Typography
-        variant="h4"
-        gutterBottom
-        sx={{ 
-          textAlign: "center", 
-          mb: 4, 
-          fontWeight: "bold", 
-          color: "text.secondary",
-          fontSize: { xs: "1.5rem", md: "2rem" } // трохи менший шрифт для мобільних
-        }}
-      >
-        Як почати роботу?
-      </Typography>
+     <Reveal>
+  <Typography
+    variant="h4"
+    gutterBottom
+    sx={{ 
+      textAlign: "center", 
+      mb: 4, 
+      fontWeight: "bold", 
+      color: "text.secondary",
+      fontSize: { xs: "1.5rem", md: "2rem" } 
+    }}
+  >
+    Як почати роботу?
+  </Typography>
+
+
       
       <Grid 
         container 
         spacing={3} 
-        rowSpacing={{ xs: 4, md: 3 }} // Більший відступ між картками на мобілці
+        rowSpacing={{ xs: 4, md: 3 }} 
       >
         {steps.map((step, index) => (
           <Grid item xs={12} sm={6} md={3} key={index} sx={{ display: 'flex' }}>
+    
             <Paper
               elevation={2}
               sx={{
-                p: 2.5, // Зменшено відступ (було 3)
+                p: 2.5, 
                 width: "100%",
                 display: "flex",
                 flexDirection: "column",
@@ -65,97 +70,30 @@ function HowToStart() {
                 bgcolor: "rgba(152, 219, 250, 0.8)",
                 transition: "transform 0.3s",
                 "&:hover": { transform: "translateY(-5px)" },
-                // Мінімальна висота тільки для десктопа, щоб були рівні
-                // На мобілці (xs) висота буде підлаштовуватися під контент
+              
                 minHeight: { xs: "auto", md: "180px" }, 
               }}
             >
-              <Box sx={{ mb: 1.5 }}>{step.icon}</Box>
-              <Typography variant="h6" sx={{ mb: 1, fontWeight: "bold", fontSize: "1.1rem" }}>
-                {step.title}
-              </Typography>
-              <Typography variant="body2" color="text.secondary" sx={{ lineHeight: 1.4 }}>
-                {step.text}
-              </Typography>
+              <Reveal delay={index * 100} fadeOnly>
+      <Box sx={{ width: "100%" }}>
+        <Box sx={{ mb: 1.5 }}>{step.icon}</Box>
+
+        <Typography variant="h6" sx={{ mb: 1, fontWeight: "bold" }}>
+          {step.title}
+        </Typography>
+
+        <Typography variant="body2" color="text.secondary">
+          {step.text}
+        </Typography>
+      </Box>
+    </Reveal>
             </Paper>
           </Grid>
         ))}
-      </Grid>
+      </Grid></Reveal>
     </Box>
   );
 }
 
 export default HowToStart;
 
-
-// import * as React from "react";
-// import { Box, Paper, Typography, Button } from "@mui/material";
-// import { Phone, Chat } from "@mui/icons-material";
-
-// export default function HowToStart() {
-//   return (
-//     <Paper
-//       elevation={3}
-//       sx={{
-//         width: "100%",
-//         maxWidth: 900,
-//         mx: "auto",
-//         p: { xs: 2, sm: 3 },
-//         mb: 3,
-//         bgcolor: "background.paper",
-//       }}
-//       aria-labelledby="how-to-start-title"
-//     >
-//       <Box display="flex" flexDirection="column" gap={1.5}>
-//         <Typography
-//           id="how-to-start-title"
-//           variant="h5"
-//           component="h2"
-//           color="text.primary"
-//         >
-//           Як почати?
-//         </Typography>
-
-//         <Typography variant="body1" color="text.secondary">
-//           1. Зв'язуємося будь‑яким зручним способом — у соцмережі або по телефону.
-//         </Typography>
-
-//         <Typography variant="body1" color="text.secondary">
-//           2. Домовляємось на першу коротку зустріч — передконсультацію (5–15 хвилин).
-//           Під час неї визначаємо, чи зможу бути вам корисним. Ця коротка розмова — безкоштовна.
-//         </Typography>
-
-//         <Typography variant="body1" color="text.secondary">
-//           3. Якщо ви згодні працювати далі — проводимо повну консультацію (1 година).
-//           Оплата здійснюється ПІСЛЯ першої консультації.
-//         </Typography>
-
-//         <Typography variant="body1" color="text.secondary">
-//           4. Далі домовляємось про формат і графік, що підходить саме вам.
-//         </Typography>
-
-//         <Box mt={1} display="flex" gap={1} flexWrap="wrap">
-//           <Button
-//             variant="contained"
-//             color="primary"
-//             startIcon={<Phone />}
-//             href="tel:0663930429"
-//           >
-//             Телефонувати
-//           </Button>
-
-//           <Button
-//             variant="outlined"
-//             color="primary"
-//             startIcon={<Chat />}
-//             href="https://t.me/yurievakhnyak"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             Написати в Telegram
-//           </Button>
-//         </Box>
-//       </Box>
-//     </Paper>
-//   );
-// }

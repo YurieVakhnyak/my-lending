@@ -1,11 +1,9 @@
 import * as React from "react";
-import { Box, Container, Typography, IconButton } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HowToStart from "../components/HowToStart"; // Імпортуємо новий компонент
-import { Telegram, Facebook, Instagram } from "@mui/icons-material";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { blue, pink, green } from "@mui/material/colors";
+import SocialMedia from "../components/SocialMedia";
 import "../App.css";
 
 function Appointmnent() {
@@ -40,7 +38,8 @@ function Appointmnent() {
           </Typography>
 
           {/* Соціальні мережі */}
-          <Box sx={{ display: "flex", gap: 2 }}>
+          <SocialMedia />
+          {/* <Box sx={{ display: "flex", gap: 2 }}>
             <IconButton
               component="a"
               sx={{ color: green[400], "&:hover": { color: green[500] } }}
@@ -81,7 +80,7 @@ function Appointmnent() {
             >
               <Instagram sx={{ fontSize: "2.5rem" }} />
             </IconButton>
-          </Box>
+          </Box> */}
 
           <Typography variant="h6" color="text.secondary">
             або телефонуйте:
