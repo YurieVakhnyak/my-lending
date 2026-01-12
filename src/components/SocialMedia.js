@@ -36,7 +36,7 @@ function SocialMedia() {
       label: "Instagram",
     },
   ].map((item, i) => (
-    <Reveal key={item.label} delay={i * 120} fadeOnly>
+    <Reveal key={item.label} delay={i * 80} fadeOnly>
       <IconButton
         component="a"
         href={item.href}

@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, Box } from "@mui/material";
+import Reveal from "./Reveal";
 
 function ContactPhones() {
   const phoneLinks = [
@@ -23,13 +24,11 @@ function ContactPhones() {
           flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
-          // xs: 2 — трохи більше ніж було для мобілок
-          // sm: 5 — значно більше для десктопа (коли в один рядок)
-          gap: { xs: 2, sm: 5 }, 
+        gap: { xs: 2, sm: 5 }, 
         }}
       >
-        {phoneLinks.map((phone) => (
-          <Box
+        {phoneLinks.map((phone, i) => (
+          <Reveal key={phone.label} delay={i * 120} fadeOnly><Box
             key={phone.value}
             component="a"
             href={phone.value}
@@ -37,16 +36,16 @@ function ContactPhones() {
               textDecoration: "none",
               color: "inherit",
               whiteSpace: "nowrap",
-              display: "inline-block", // Потрібно для коректної анімації зміщення
-              transition: "all 0.3s ease", // Плавність для кольору і зміщення
+              display: "inline-block", 
+              transition: "all 0.3s ease", 
               "&:hover": { 
                 color: "primary.main",
-                transform: "translateY(-2px)" // Легке зміщення вгору
+                transform: "translateY(-2px)" 
               },
             }}
           >
             {phone.label}
-          </Box>
+          </Box></Reveal>
         ))}
       </Typography>
     </Box>
