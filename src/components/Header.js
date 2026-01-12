@@ -61,7 +61,7 @@ function Header() {
               <NavLink to={"/appointment/"} style={{ textDecoration: "none" }}>
                 <Typography
                   key={title + index + "key"}
-                  variant="h1"
+                  variant="h6"
                   Wrap
                   sx={{
                     display: { xs: "none", md: "flex" },
@@ -146,7 +146,7 @@ function Header() {
               <NavLink to="/appointment/" style={{ textDecoration: "none" }}>
                 <Typography
                   key={index + title + "list"}
-                  variant="h1"
+                  variant="h6"
                   noWrap
                   component="a"
                   sx={{

@@ -1,4 +1,4 @@
-import { Box,  Container, Divider } from "@mui/material";
+import { Box,  Container } from "@mui/material";
 import Header from "../components/Header";
 import Hero from "../components/Hero"; 
 import Footer from "../components/Footer";
@@ -20,19 +20,18 @@ function Home() {
     >
       <Header />
       <Hero />
-        <Divider /> 
-      {/* ABOUT SHORT */}
+     
+  
       <Reveal>
         <Box component="section" id="about-short">
           <AboutMeShort />
           <MoreButton/>
         </Box>
       </Reveal>
-      <Divider />    
+      
         <Box><AreasOfWork /></Box>     
 
-      {/* HOW TO START */}
-     
+          
       <Box component="section" id="how-to-start">
         <HowToStart short />
       </Box>

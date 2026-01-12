@@ -45,7 +45,11 @@ function SocialMedia() {
         aria-label={item.label}
         sx={{
           color: item.color[300],
-          "&:hover": { color: item.color[500] },
+          transition: "all 0.3s ease", // Плавність для кольору і зміщення
+              "&:hover": { 
+                color: item.color[500],
+                transform: "translateY(-2px)" 
+                },
         }}
       >
         {item.icon}
