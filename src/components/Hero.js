@@ -17,25 +17,38 @@ function Hero() {
         px: 2,
       }}
     >
-      <Typography
-        variant="h3"
-        component="h1"
-        sx={{
-          fontSize: { xs: "2.2rem", sm: "3rem", md: "3.5rem" },
-          color: "#42a5f5",
-          mb: 2,
-          lineHeight: 1.2,
-        }}
-      >
-        Почни зміни з{" "}
-        <Box
-          component="span"
-          sx={{ color: "#1976d2", fontWeight: "bold" }}
-        >
-          прийняття
-        </Box>{" "}
-        себе
-      </Typography>
+     <Typography  variant="h3"
+  component="h1"
+  sx={{
+    fontSize: { xs: "2rem", sm: "2.4rem", md: "2.8rem" },
+    color: "#1976d2",
+    fontWeight: 700,
+    mb: 1,
+  }}>
+  Онлайн-психолог{" "}
+  <Box component="span" sx={{ whiteSpace: "nowrap" }}>
+    Юрій Вахняк
+  </Box>
+</Typography>
+
+
+<Typography
+  variant="h4"
+  component="h2"
+  sx={{
+    fontSize: { xs: "1.6rem", sm: "2rem", md: "2.4rem" },
+    color: "#42a5f5",
+    mb: 2,
+    lineHeight: 1.2,
+  }}
+>
+  Почни зміни з{" "}
+  <Box component="span" sx={{ fontWeight: "bold", color: "#1976d2" }}>
+    прийняття
+  </Box>{" "}
+  себе
+</Typography>
+
 
       <Typography
         sx={{
