@@ -10,6 +10,8 @@ import MyVideos from "./pages/MyVideos";
 import ArticlePage from "./pages/ArticlePage";
 import Tests from "./pages/Tests";
 import TestPage from "./pages/TestPage";
+import FloatingAppointmentButton from "./components/FloatingAppointmentButton";
+
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
         <Route path="/appointment" element={<Appointment />} />
       </Routes>
       <ScrollToTopButton />
+       <FloatingAppointmentButton />
     </Container>
   );
 }
