@@ -90,7 +90,7 @@ function AreasOfWork() {
     <Box sx={{ py: 8, px: 2 }}>
       {/* З ЧИМ */}
       <Reveal variant="slide">
-        <Box sx={{ display: "flex", justifyContent: "center", gap: 1, mb: 3 }}>
+        <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, mb: 3 }}>
           <TaskAltIcon sx={{ color: "success.main", fontSize: "2rem" }} />
           <Typography variant="h4" color="grey.800">
             З чим я працюю
@@ -110,7 +110,7 @@ function AreasOfWork() {
 
       {/* З КИМ */}
       <Reveal variant="slide">
-        <Box sx={{ display: "flex", justifyContent: "center", gap: 1, mb: 3 }}>
+        <Box sx={{ display: "flex", alignItems: "center",justifyContent: "center", gap: 1, mb: 3 }}>
           <TaskAltIcon sx={{ color: "success.main", fontSize: "2rem" }} />
           <Typography variant="h4" color="grey.800">
             З ким я працюю
@@ -130,7 +130,7 @@ function AreasOfWork() {
 
       {/* НЕ ПРАЦЮЮ */}
       <Reveal variant="slide">
-        <Box sx={{ display: "flex", justifyContent: "center", gap: 1, mb: 3 }}>
+        <Box sx={{ display: "flex", alignItems: "center",justifyContent: "center", gap: 1, mb: 3 }}>
           <CloseIcon sx={{ color: "error.main", fontSize: "2rem" }} />
           <Typography variant="h4" color="grey.800">
             Не працюю

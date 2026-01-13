@@ -7,14 +7,24 @@ const ScrollTopButton = styled(Fab)(({ theme }) => ({
   position: "fixed",
   bottom: theme.spacing(2),
   right: theme.spacing(2),
-  //   display: "none",
+  // Початкова прозорість
+  opacity: 0.5,
+  // Плавний перехід для властивості opacity (0.3 секунди)
+  transition: "opacity 0.3s ease-in-out, transform 0.5s ease-in-out",
+  
+  "&:hover": {
+    opacity: 1, // Повна непрозорість при наведенні
+    // За бажанням можна додати легке збільшення
+    // transform: "scale(1.1)",
+  },
 }));
 
 function ScrollToTopButton() {
   const [visible, setVisible] = useState(false);
 
   const handleScroll = () => {
-    if (window.pageYOffset > 300) {
+    // pageYOffset вважається застарілим, краще window.scrollY
+    if (window.scrollY > 300) {
       setVisible(true);
     } else {
       setVisible(false);
@@ -31,15 +41,8 @@ function ScrollToTopButton() {
   }, []);
 
   return (
-    <Zoom
-      in={visible}
-      sx={{
-        opacity: 0.5, // Set the desired opacity here
-        "&:hover": {
-          opacity: 1, // Fully opaque on hover
-        },
-      }}
-    >
+    // Zoom тепер відповідає лише за появу кнопки
+    <Zoom in={visible}>
       <ScrollTopButton
         color="primary"
         onClick={handleClick}

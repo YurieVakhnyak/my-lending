@@ -1,58 +1,88 @@
 import { useState, useEffect } from "react";
 import { Fab, Zoom } from "@mui/material";
 import ChatIcon from "@mui/icons-material/Chat";
-import { styled } from "@mui/system";
 import { useLocation, useNavigate } from "react-router-dom";
 
-const FloatingCTA = styled(Fab)(({ theme }) => ({
-  position: "fixed",
-  bottom: theme.spacing(10), // трохи вище ніж ScrollToTop
-  right: theme.spacing(2),
-  zIndex: 1300,
-  // Встановлюємо початкову прозорість
-  opacity: 0.7, 
-  // Плавний перехід для прозорості та трансформації
-  transition: "all 0.3s ease-in-out", 
-  
-  "&:hover": {
-    opacity: 1, // Стає повністю непрозорою при наведенні
-    transform: "scale(1.1)", // Можна додати легке збільшення для кращого відгуку
-  },
-}));
-
 function FloatingAppointmentButton() {
-  const [visible, setVisible] = useState(false);
+  const [showBottom, setShowBottom] = useState(true); // Кнопка в самому низу
+  const [showShifted, setShowShifted] = useState(false); // Кнопка вище
+  
   const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
-      // Кнопка з'являється після 350px скролу і зникає біля самого футера
-      const nearBottom =
-        window.innerHeight + window.scrollY >
-        document.body.offsetHeight - 200;
+      const scrollY = window.scrollY;
+      const totalHeight = document.documentElement.scrollHeight;
+      const windowHeight = window.innerHeight;
+      const nearBottom = windowHeight + scrollY > totalHeight - 200;
 
-      setVisible(window.scrollY > 350 && !nearBottom);
+      if (nearBottom) {
+        // Ховаємо обидві кнопки біля футера
+        setShowBottom(false);
+        setShowShifted(false);
+      } else {
+        if (scrollY > 300) {
+          // Коли проскролили 300px: нижня зникає, верхня з'являється
+          setShowBottom(false);
+          setShowShifted(true);
+        } else {
+          // Коли ми вгорі: нижня з'являється, верхня зникає
+          setShowBottom(true);
+          setShowShifted(false);
+        }
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Не показуємо на сторінці запису
   if (location.pathname === "/appointment") return null;
 
   return (
-    <Zoom in={visible}>
-      <FloatingCTA
-        color="primary"
-        onClick={() => navigate("/appointment")}
-        aria-label="Записатися на консультацію"
-      >
-        <ChatIcon />
-      </FloatingCTA>
-    </Zoom>
+    <>
+      {/* ВАРІАНТ 1: Нижня кнопка (до 300px) */}
+      <Zoom in={showBottom} unmountOnExit>
+        <Fab
+          color="primary"
+          onClick={() => navigate("/appointment")}
+          sx={{
+            position: "fixed",
+            bottom: 16,
+            right: 16,
+            zIndex: 1300,
+            opacity: 0.8,
+            transition: "opacity 0.3s ease",
+            "&:hover": { opacity: 1 }
+          }}
+        >
+          <ChatIcon />
+        </Fab>
+      </Zoom>
+
+      {/* ВАРІАНТ 2: Верхня кнопка (після 300px) */}
+      <Zoom in={showShifted} unmountOnExit>
+        <Fab
+          color="primary"
+          onClick={() => navigate("/appointment")}
+          sx={{
+            position: "fixed",
+            bottom: 80, 
+            right: 16,
+            zIndex: 1300,
+            opacity: 0.8,
+            transition: "opacity 0.3s ease",
+            "&:hover": { opacity: 1 }
+          }}
+        >
+          <ChatIcon />
+        </Fab>
+      </Zoom>
+    </>
   );
 }
 
 export default FloatingAppointmentButton;
+
+
