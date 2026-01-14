@@ -1,13 +1,12 @@
 import Box from "@mui/material/Box";
 
 import Typography from "@mui/material/Typography";
-import * as React from "react";
 import "../App.css";
 
 import ProgressiveImageCard from "../components/ProgressiveImageCard";
-import lowQualityImage from "../components/images/mainphoto-min.jpg";
-import mediumQualityImage from "../components/images/mainphoto-mid.jpg";
-import highQualityImage from "../components/images/mainphoto.jpg";
+import lowQualityImage from "../components/images/main_photo_yurie_vakhnyak_low.jpg";
+import mediumQualityImage from "../components/images/main_photo_yurie_vakhnyak_mid.jpg";
+import highQualityImage from "../components/images/main_photo_yurie_vakhnyak_high.jpg";
 import { AboutMyProfession } from "../data/TextConstants";
 
 
@@ -23,7 +22,7 @@ function AboutMeShort() {
         bgcolor: "#bbdefb",
       }}
     >
-      <Box width={400} sx={{ textAlign: "justify", p: 3 }}>
+      <Box width={450} sx={{ textAlign: "justify", p: 3 }}>
         {AboutMyProfession.split("\n").map((paragraph, index) => (
           <Typography
             key={index}
@@ -42,9 +41,10 @@ function AboutMeShort() {
         lowQualityImage={lowQualityImage}
         mediumQualityImage={mediumQualityImage}
         highQualityImage={highQualityImage}
-        width={300} // Ширина картки
-        height={250} // Висота картки
+        width={250} // Ширина картки
+        height={300} // Висота картки
         title="Yurie Vakhnyak's Photo"
+       
       />
     </Box>
   );

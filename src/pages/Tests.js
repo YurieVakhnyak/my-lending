@@ -33,7 +33,18 @@ function Tests() {
       <Box sx={{ p: 2 }}>
         <WarningMessage />
       </Box>
-      <Box sx={{ display: "flex", flexWrap: "wrap" }}>
+     <Box 
+  sx={{ 
+    display: "flex", 
+    flexWrap: "wrap",   
+    // alignItems: "stretch",
+    justifyContent: "center", // Центрує блоки по горизонталі
+    gap: 3,                   // Створює однакову відстань (24px) між картками
+       mx: "auto",  
+                // Центрує сам контейнер
+    
+  }}
+>
         {tests.length > 0 ? (
           tests.map((test, index) => (
             <CardTest

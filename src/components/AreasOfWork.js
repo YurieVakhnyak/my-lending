@@ -1,4 +1,4 @@
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid, Container } from "@mui/material";
 
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import SelfImprovementIcon from "@mui/icons-material/SelfImprovement";
@@ -87,7 +87,7 @@ function AreasOfWork() {
   ];
 
   return (
-    <Box sx={{ py: 8, px: 2 }}>
+   <Container maxWidth="md" sx={{ py: 8 }}>
       {/* З ЧИМ */}
       <Reveal variant="slide">
         <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, mb: 3 }}>
@@ -147,7 +147,7 @@ function AreasOfWork() {
           </Grid>
         ))}
       </Grid>
-    </Box>
+    </Container>
   );
 }
 

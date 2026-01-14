@@ -1,3 +1,5 @@
+
+
 import React, { useState, useEffect } from "react";
 import { Card, CardMedia } from "@mui/material";
 
@@ -8,6 +10,7 @@ const ProgressiveImageCard = ({
   width = 350,
   height = 300,
   title = "Photo",
+  sx = {},
 }) => {
   const [imageSrc, setImageSrc] = useState(lowQualityImage); // Початкове зображення
 
