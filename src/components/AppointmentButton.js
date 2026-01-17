@@ -21,6 +21,7 @@ export default function AppointmentButton() {
             minWidth: "250px",
             maxWidth: "400px",
             width: "70vw",
+            borderRadius: "15px",
           }}
         >
           Записатися на консультацію
