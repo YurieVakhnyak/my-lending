@@ -15,7 +15,11 @@ import FloatingAppointmentButton from "./components/FloatingAppointmentButton";
 
 function App() {
   return (
-    <Container disableGutters maxWidth={false}>
+   <Container 
+  disableGutters 
+  maxWidth={false} 
+  sx={{ minWidth: "320px", overflowX: "auto" }} 
+>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
