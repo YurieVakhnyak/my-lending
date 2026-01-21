@@ -34,8 +34,10 @@ function SocialMedia() {
         },
           {
           icon: <ViberIcon sx={{ fontSize: "2.5rem" }} />,
-          href: "https://viber.me/380663930429",
-          color: purple,
+       // Для SocialMedia.js
+       href: "viber://chat?number=%2B380663930429",
+    
+       color: purple,
           label: "Написати у Viber",
         },
         {
