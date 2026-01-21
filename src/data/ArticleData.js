@@ -1,5 +1,36 @@
 export const articleData = [
   {
+  title: `Самотність і страх відторгнення`,
+  text: `<div><p><span style="font-weight: 400;">Самотність часто народжується не з відсутності людей поруч, а з досвіду відторгнення &mdash; реального або очікуваного. Коли близькість колись завершилась болем, психіка робить логічний висновок: </span><em><span style="font-weight: 400;">краще не наближатися, ніж знову пережити втрату</span></em><span style="font-weight: 400;">. Так формується страх відторгнення &mdash; внутрішній &laquo;охоронець&raquo;, який захищає від болю, але водночас ізолює.</span></p>
+<p><span style="font-weight: 400;">Страх відторгнення змушує людину стримувати спонтанність, приховувати потреби, не показувати себе справжнього. Ззовні це може виглядати як відстороненість, незалежність або самодостатність, але всередині часто є сильне прагнення до близькості.</span></p>
+<h3><strong>Як працювати зі страхом відторгнення</strong></h3>
+<ol>
+<li style="font-weight: 400;"><strong>Нормалізація</strong><strong><br /></strong><span style="font-weight: 400;"> Страх відторгнення &mdash; не слабкість, а адаптивна реакція. Він формується на ґрунті ранніх стосунків, досвіду знецінення або емоційної небезпеки. Важливо не боротися з ним, а зрозуміти, </span><em><span style="font-weight: 400;">від чого саме він захищає</span></em><span style="font-weight: 400;">.</span><span style="font-weight: 400;"><br /><br /></span></li>
+<li style="font-weight: 400;"><strong>Розмежування минулого і теперішнього</strong><strong><br /></strong><span style="font-weight: 400;"> Часто клієнт реагує не на конкретну людину, а на памʼять про колишній біль. Робота полягає у відновленні здатності розрізняти:</span><span style="font-weight: 400;"><br /></span> <em><span style="font-weight: 400;">&laquo;Це тоді було небезпечно&raquo;</span></em><span style="font-weight: 400;"> &mdash; і </span><em><span style="font-weight: 400;">&laquo;що відбувається зі мною зараз?&raquo;</span></em><span style="font-weight: 400;">.</span><span style="font-weight: 400;"><br /><br /></span></li>
+<li style="font-weight: 400;"><strong>Дослідження базових переконань</strong><strong><br /></strong><span style="font-weight: 400;"> За страхом відторгнення зазвичай стоять несвідомі установки:</span><span style="font-weight: 400;"><br /><br /></span></li>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">&laquo;Мене можна любити лише за умови&hellip;&raquo;</span><span style="font-weight: 400;"><br /><br /></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">&laquo;Якщо я покажу себе справжнього &mdash; мене покинуть&raquo;</span><span style="font-weight: 400;"><br /><br /></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">&laquo;Мої потреби &mdash; надмірні&raquo;</span><span style="font-weight: 400;"><br /><br /></span></li>
+</ul>
+</ol>
+<p><span style="font-weight: 400;">Усвідомлення цих переконань зменшує їхню владу.</span><span style="font-weight: 400;"><br /><br /></span></p>
+<ol>
+<li style="font-weight: 400;"><strong>Поступова толерантність до вразливості</strong><strong><br /></strong><span style="font-weight: 400;"> Близькість &mdash; це навичка, а не стрибок у прірву. У терапії важливо рухатися маленькими кроками: навчитися ділитися думками, почуттями, проханнями, залишаючись у контакті з тілом і межами.</span><span style="font-weight: 400;"><br /><br /></span></li>
+<li style="font-weight: 400;"><strong>Робота з тілесною реакцією</strong><strong><br /></strong><span style="font-weight: 400;"> Страх відторгнення часто живе в тілі: напруга, стиснення, &laquo;завмирання&raquo;. Тілесно-орієнтовані техніки, заземлення, уповільнення допомагають не тікати з контакту автоматично.</span><span style="font-weight: 400;"><br /><br /></span></li>
+</ol>
+<h3><strong>Що можна порекомендувати людині, яка хоче близькості, але боїться</strong></h3>
+<ul>
+<li style="font-weight: 400;"><strong>Почати з чесності із собою</strong><strong><br /></strong><span style="font-weight: 400;"> Визнати: </span><em><span style="font-weight: 400;">&laquo;Я хочу бути ближчим і мені страшно&raquo;</span></em><span style="font-weight: 400;">. Це не суперечність, а точка росту.</span><span style="font-weight: 400;"><br /><br /></span></li>
+<li style="font-weight: 400;"><strong>Не вимагати від себе безмежної сміливості</strong><strong><br /></strong><span style="font-weight: 400;"> Близькість не починається з повної відкритості &mdash; вона починається з дозволу бути недосконалим.</span><span style="font-weight: 400;"><br /><br /></span></li>
+<li style="font-weight: 400;"><strong>Практикувати &ldquo;достатню&rdquo; відкритість</strong><strong><br /></strong><span style="font-weight: 400;"> Ділитися не всім одразу, а тим, що зараз посильно. Спостерігати за реакцією іншого, а не за власними катастрофічними фантазіями. Помічати того, хто поруч з тобою</span><span style="font-weight: 400;"><br /><br /></span></li>
+<li style="font-weight: 400;"><strong>Розрізняти відторгнення і несумісність</strong><strong><br /></strong><span style="font-weight: 400;"> Відсутність взаємності &mdash; не завжди означає &laquo;зі мною щось не так&raquo;. Часто це просто різні потреби або етапи життя.</span><span style="font-weight: 400;"><br /><br /></span></li>
+<li style="font-weight: 400;"><strong>Памʼятати: відмова &mdash; це досвід, а не вирок</strong><strong><br /></strong><span style="font-weight: 400;"> Здатність витримувати мікродози розчарування &mdash; ключ до справжньої близькості.</span><span style="font-weight: 400;"><br /><br /></span></li></div>
+</ul>
+<p><strong>Близькість завжди несе ризик. Але уникнення близькості гарантує самотність.</strong><strong><br /></strong><strong> Психологічна сесія &mdash; це простір, де можна безпечно тренувати контакт, вразливість і довіру, не зраджуючи себе.</strong></p>`,
+  date: "15.01.2026",
+},
+  {
     title: `ОСНОВНІ ПОГЛЯДИ НА ПРИРОДУ АГРЕСІЇ`,
     text: `<div>
 <div>Мета цієї статті &ndash; короткий огляд та узагальнення поглядів на теорію агресії.</div>
@@ -311,7 +342,9 @@ export const articleData = [
 <div><br />&nbsp;</div>`,
     date: "27.01.2025",
   },
+  
 ];
+
 // {
 //   title: ``,
 //   text: ``,
