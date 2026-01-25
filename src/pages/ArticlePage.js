@@ -12,7 +12,8 @@ function ArticlePage() {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch("/data/articles/index.json")
+ fetch(`/data/articles/index.json?v=${Date.now()}`)
+
       .then((res) => res.json())
       .then((data) => {
         const found = data.find((a) => a.slug === id);

@@ -11,7 +11,8 @@ function Articles() {
   const [articleData, setArticleData] = useState([]);
 
   useEffect(() => {
-    fetch("/data/articles/index.json")
+    fetch(`/data/articles/index.json?v=${Date.now()}`)
+
       .then((res) => res.json())
       .then((data) => setArticleData(data));
   }, []);

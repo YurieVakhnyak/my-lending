@@ -14,6 +14,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
+    "gray-matter": "^4.0.3",
+    "marked": "^17.0.1",
     "react": "^18.2.0",
     "react-cookie-consent": "^9.0.0",
     "react-dom": "^18.2.0",
@@ -23,12 +25,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "content:build": "node scripts/build-articles.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "postbuild": "node scripts/postbuild.js"
+    "postbuild": "node scripts/postbuild.js && react-snap"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +52,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "react-snap": "^1.23.0",
+    "serve": "^14.2.5"
   }
 }
