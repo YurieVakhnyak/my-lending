@@ -33,12 +33,11 @@ function Tests() {
         <Helmet>
           <title>Психологічні тести онлайн | Юрій Вахняк</title>
           <meta 
-            data-rh="true"
-            name="description" 
+                        name="description" 
             content="Пройдіть професійні психологічні тести онлайн: шкала тривоги та депресії (HADS), тест на ПТСР та інші. Отримайте миттєвий результат та рекомендації психолога." 
           />
-          <meta data-rh="true" property="og:title" content="Психологічні тести онлайн | Юрій Вахняк" />
-          <meta data-rh="true" property="og:description" content="Безкоштовні клінічні тести для самодіагностики ментального стану." />
+          <meta property="og:title" content="Психологічні тести онлайн | Юрій Вахняк" />
+          <meta property="og:description" content="Безкоштовні клінічні тести для самодіагностики ментального стану." />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://psy-yv.com.ua/tests" />
           <link rel="canonical" href="https://psy-yv.com.ua/tests" />

@@ -25,12 +25,12 @@ function MyVideos() {
         <Helmet>
           <title>Відеолекції та поради психолога | Юрій Вахняк</title>
           <meta 
-            data-rh="true"
+            
             name="description" 
             content="Дивіться корисні відео про психологію: розбори складних станів, поради щодо самодопомоги та відповіді на поширені запитання від психолога Юрія Вахняка." 
           />
-          <meta data-rh="true" property="og:title" content="Психологія у відеоформаті | Юрій Вахняк" />
-          <meta data-rh="true" property="og:description" content="Відеоматеріали про ментальне здоров'я, тривогу та методи терапії." />
+          <meta  property="og:title" content="Психологія у відеоформаті | Юрій Вахняк" />
+          <meta  property="og:description" content="Відеоматеріали про ментальне здоров'я, тривогу та методи терапії." />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://psy-yv.com.ua/videos" />
           <link rel="canonical" href="https://psy-yv.com.ua/videos" />

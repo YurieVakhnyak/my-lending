@@ -46,7 +46,7 @@ function TestPage() {
         <Helmet>
           <title>{test.testTitle} | Онлайн-тест | Юрій Вахняк</title>
           <meta 
-            data-rh="true"
+            
             name="description" 
             content={`${test.testTitle}: ${test.testDescription.substring(0, 150)}... Пройдіть тест онлайн та отримайте розшифровку результатів.`} 
           />
