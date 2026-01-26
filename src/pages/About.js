@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async"; // Додано
+import { Helmet} from "react-helmet-async"; 
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
@@ -16,7 +16,7 @@ import "../App.css";
 
 function About() {
   return (
-    <HelmetProvider>
+    
       <Container
         disableGutters
         maxWidth={false}
@@ -30,11 +30,10 @@ function About() {
         <Helmet>
           <title>Про мене | Психолог Юрій Вахняк</title>
           <meta 
-            data-rh="true"
             name="description" 
             content="Дізнайтеся більше про Юрія Вахняка: кваліфікація, досвід роботи в гештальт-підході та освіта. Професійний шлях та дипломи психолога." 
           />
-          <meta data-rh="true" property="og:title" content="Про мене | Юрій Вахняк — Психолог онлайн" />
+          <meta property="og:title" content="Про мене | Юрій Вахняк — Психолог онлайн" />
           <meta property="og:type" content="profile" />
           <meta property="og:url" content="https://psy-yv.com.ua/about" />
           <link rel="canonical" href="https://psy-yv.com.ua/about" />
@@ -96,7 +95,7 @@ function About() {
         <AppointmentButton sx={{ mt: "auto" }} />
         <Footer />
       </Container>
-    </HelmetProvider>
+
   );
 }
 

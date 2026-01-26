@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async"; // Додано
+import { Helmet } from "react-helmet-async"; // Додано
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Header from "../components/Header";
@@ -11,7 +11,7 @@ import CookieBanner from "../components/CookieBanner";
 
 function MyVideos() {
   return (
-    <HelmetProvider>
+
       <Container
         disableGutters
         maxWidth={false}
@@ -52,7 +52,7 @@ function MyVideos() {
         <AppointmentButton />
         <Footer />
       </Container>
-    </HelmetProvider>
+
   );
 }
 

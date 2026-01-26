@@ -87,6 +87,7 @@ const Footer = () => {
           © {new Date().getFullYear()} YurieVakhnyak. All rights reserved.
         </Typography>
       </Container>
+      {/* <div className="footer-ready"></div> */}
     </Box>
   );
 };

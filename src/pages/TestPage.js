@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link, useParams } from "react-router-dom";
-import { Helmet, HelmetProvider } from "react-helmet-async"; // Додано
+import { Helmet } from "react-helmet-async"; 
 import Header from "../components/Header";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -32,7 +32,7 @@ function TestPage() {
   const TestComponent = testComponents[test.component];
 
   return (
-    <HelmetProvider>
+   
       <Container
         disableGutters
         maxWidth={false}
@@ -99,7 +99,7 @@ function TestPage() {
 
         <Footer />
       </Container>
-    </HelmetProvider>
+    
   );
 }
 

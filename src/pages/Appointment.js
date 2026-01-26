@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async"; // Додано
+import { Helmet } from "react-helmet-async"; // Додано
 import { Box, Container, Typography } from "@mui/material";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -10,7 +10,7 @@ import "../App.css";
 
 function Appointmnent() {
   return (
-    <HelmetProvider>
+   
       <Container
         disableGutters
         maxWidth={false}
@@ -24,11 +24,11 @@ function Appointmnent() {
         <Helmet>
           <title>Запис на консультацію | Психолог Юрій Вахняк</title>
           <meta 
-            data-rh="true"
+            
             name="description" 
             content="Запишіться на онлайн-консультацію до психолога Юрія Вахняка. Вартість: 1000 грн за 50 хв. Контакти, графік роботи та месенджери для зв'язку." 
           />
-          <meta data-rh="true" property="og:title" content="Записатися до психолога онлайн | Юрій Вахняк" />
+          <meta  property="og:title" content="Записатися до психолога онлайн | Юрій Вахняк" />
           <meta property="og:url" content="https://psy-yv.com.ua/appointment" />
           <link rel="canonical" href="https://psy-yv.com.ua/appointment" />
         </Helmet>
@@ -96,7 +96,7 @@ function Appointmnent() {
 
         <Footer />
       </Container>
-    </HelmetProvider>
+ 
   );
 }
 

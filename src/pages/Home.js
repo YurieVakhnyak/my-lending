@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import { Box, Container } from "@mui/material";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -13,35 +13,27 @@ import Reveal from "../components/Reveal";
 
 function Home() {
   return (
-    <HelmetProvider>
+  
       <Container
         disableGutters
         maxWidth={false}
         sx={{ bgcolor: "#cfe8fc" }}
       >
-        <Helmet>
-          {/* Основні мета-теги */}
-          <title>Психолог онлайн — Юрій Вахняк</title>
-          <meta 
-            data-rh="true"
-            name="description" 
-            content="Юрій Вахняк — психолог онлайн. Індивідуальні консультації: тривога, депресія, панічні атаки, ПТСР, життєві кризи. Професійна психологічна допомога." 
-          />
-          <meta 
-            data-rh="true"
-            name="keywords" 
-            content="Юрій Вахняк, психолог, гештальт, консультації, онлайн психолог, тест на тривожність та депресію, тест ПТСР, HADS, PSL-5" 
-          />
-          <meta data-rh="true" name="author" content="Юрій Вахняк" />
-          <link rel="canonical" href="https://psy-yv.com.ua/" />
+     <Helmet>
+  <title>Психолог онлайн — Юрій Вахняк</title>
 
-          {/* Open Graph для соцмереж */}
-          <meta property="og:title" content="Психолог онлайн — Юрій Вахняк" />
-          <meta property="og:description" content="Професійна психологічна допомога онлайн: тривога, депресія, ПТСР." />
-          <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://psy-yv.com.ua/" />
-          <meta property="og:image" content="https://psy-yv.com.ua/logo512.png" />
-        </Helmet>
+  <meta
+    name="description"
+    content="Юрій Вахняк — психолог онлайн. Індивідуальні консультації: тривога, депресія, ПТСР."
+  />
+
+  <link rel="canonical" href="https://psy-yv.com.ua/" />
+
+  <meta property="og:title" content="Психолог онлайн — Юрій Вахняк" />
+  <meta property="og:description" content="Професійна психологічна допомога онлайн" />
+  <meta property="og:image" content="https://psy-yv.com.ua/logo512.png" />
+</Helmet>
+
 
         <Header />
         <Hero />
@@ -70,7 +62,6 @@ function Home() {
 
         <Footer />
       </Container>
-    </HelmetProvider>
   );
 }
 

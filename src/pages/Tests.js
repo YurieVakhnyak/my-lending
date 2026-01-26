@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async"; // Додано
+import { Helmet } from "react-helmet-async"; // Додано
 import Header from "../components/Header";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -19,7 +19,7 @@ function Tests() {
   }, []);
 
   return (
-    <HelmetProvider>
+  
       <Container
         disableGutters
         maxWidth={false}
@@ -80,7 +80,7 @@ function Tests() {
 
         <Footer />
       </Container>
-    </HelmetProvider>
+    
   );
 }
 
