@@ -27,12 +27,13 @@
   "scripts": {
     "start": "react-scripts start",
     "content:build": "node scripts/build-articles.js",
+     "prebuild": "npm run content:build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "postbuild": "node scripts/postbuild.js && react-snap"
+    "postbuild": "node scripts/postbuild.js && react-snap && node scripts/generate-sitemap.js"
   },
   "eslintConfig": {
     "extends": [

@@ -46,7 +46,7 @@ function Appointmnent() {
             sx={{ textAlign: "center" }}
           >
             <Typography variant="h5" color="text.secondary" sx={{ mt: 4 }}>
-              Для запису на онлайн-консультацію або запитань пишіть:
+              Щоб домовитися про онлайн-консультацію чи поставити питання, пишіть:
             </Typography>
 
             <SocialMedia />
